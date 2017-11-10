@@ -61,6 +61,8 @@ sufficient free disk space (approx. 50 GB).
 * [OceanDataView](https://odv.awi.de/), to pre-process the data files.
 * [Nco](http://nco.sourceforge.net/), a set of netCDF operators for regridding, editing etc.
 
+More details about the procedure: [installation](installation.md).
+
 ### Before the workshop...
 
 If you plan to use your own dataset, please verify that it has been quality controlled.     
