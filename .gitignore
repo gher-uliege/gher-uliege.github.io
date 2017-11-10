@@ -1,0 +1,7 @@
+.bundle/
+.sass-cache/
+Diva-Workshops/_site/
+Gemfile
+Gemfile.lock
+_site/
+vendor/
