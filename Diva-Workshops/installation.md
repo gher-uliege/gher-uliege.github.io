@@ -11,7 +11,7 @@ Install Plots:
 Pkg.add("Plots")
 ```
 
-Cloned `divand` into the v0.6 julia directory:
+Clone `divand` into the v0.6 julia directory:
 ```bash
 cd .julia/v0.6/
 git clone git@github.com:gher-ulg/divand.jl.git
@@ -35,11 +35,10 @@ used (remember, julia does some compilations)
 
 
 #### Updating julia
-Download binaries, install as usual.     
-Run in JULIA (not IJulia of Jupyter): `Pkg.build("IJulia")` or ??
+1. Download binaries, install as usual.     
+2. Run in Julia (not IJulia of Jupyter): `Pkg.build("IJulia")` or ??
 `Pkg.add("IJulia")``
-
-Then in IJulia Pkg.update()
+3. Then in IJulia `Pkg.update()`
 
 
 Depending on your current Julia setup, installing divand might ask for
@@ -48,4 +47,4 @@ for example
 ```julia
 LoadError: ArgumentError: Module Roots not found in current path.
 Run `Pkg.add("Roots")` to install the Roots package.
-julia
+```
