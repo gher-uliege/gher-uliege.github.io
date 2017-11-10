@@ -1,5 +1,5 @@
 
-Install anaconda    
+Install anaconda: [https://conda.io/docs/user-guide/install/index.html](https://conda.io/docs/user-guide/install/index.html) 
 
 Install IJulia:
 ```julia
@@ -31,7 +31,7 @@ Pkg.add("PyPlot")
 ### First steps with Jupyter and Julia
 
 When modifying the code, restart the kernel to make sure latest version is
-used (remember, julia does some compilations)
+used (remember, julia does some compilations).
 
 
 #### Updating julia
