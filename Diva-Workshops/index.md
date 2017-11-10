@@ -22,31 +22,35 @@ Details concerning the exact room will be provided soon.
 
 The workshop will be focused on `divand` (n-dimensional interpolation), unlike the previous editions, which were dedicated to the 2D version (Diva). Half a day will be dedicated to the 3rd SeaDataCloud *Product Meeting*.
 
+**[P]** denote presentations     
+**[E]** denote exercises
+**[D]** denote discussions
+
 ### Tuesday
-What is `divand`, differences with previous versions of diva?           
-Example with topography constrain, advection      
-What is a [jupyter-notebook](http://jupyter.org/)?                       
-Demo CINECA jupyterhub        
+**[P]** What is `divand`, differences with previous versions of Diva?           
+**[E]** Example with topography constrain, advection      
+**[P]** What is a [jupyter-notebook](http://jupyter.org/)?                       
+**[P/E]** Demo CINECA jupyterhub        
 
 ### Wednesday
 
-Basic commands with [Julia](https://julialang.org/) and major differences with MATLAB and Python      
-How to run `divand` (common dataset) using prepared notebooks and Black Sea ODV data       
-Preparation of topography      
-Data reading           
+**[P/E]** Basic [Julia](https://julialang.org/) commands and major differences with MATLAB and Python      
+**[E]** How to run `divand` (common dataset) using prepared notebooks and Black Sea ODV data       
+**[E]** Preparation of topography      
+**[E]** Data reading           
 
 ### Thursday
-Configuration for regional products                          
-Discussion: priorities of features from `Diva` implemented in new version `divand`     
+**[E]** Configuration for regional products                          
+**[D]** Discussion: priorities of features from `Diva` implemented in new version `divand`     
 
 ### Friday
-Parallel session between:     
-SeaDataCloud *Product Meeting*      
-Question and answers and advanced topics (advection, reference fields, ...)
+Parallel session:     
+**[D]** SeaDataCloud *Product Meeting*      
+**[D]** Question and answers and advanced topics (advection, reference fields, ...)
 
 ## Preparation
 
-Ideally, participants will have a laptop with:     
+Ideally, participants will have with them a laptop with:     
 16 GB RAM memory and     
 sufficient free disk space (approx. 50 GB).
 
@@ -59,6 +63,6 @@ sufficient free disk space (approx. 50 GB).
 
 ### Before the workshop...
 
-If you want to use your own dataset, please verify that it has been quality controlled.     
+If you plan to use your own dataset, please verify that it has been quality controlled.     
 Bring power adapters if need (check https://www.power-plugs-sockets.com/belgium/).     
 If your institution is part of [eduroam](https://www.eduroam.org/), be sure to have your credentials for the wifi connexion.
