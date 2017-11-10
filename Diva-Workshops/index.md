@@ -10,7 +10,7 @@ Participants are expected to be partners of [SeaDataCloud](https://www.seadatane
 
 ### Dates
 
-From 2 to 6 of April, 2018.
+From 3 to 6 of April, 2018.
 
 ### Venue
 
@@ -23,26 +23,42 @@ Details concerning the exact room will be provided soon.
 The workshop will be focused on `divand` (n-dimensional interpolation), unlike the previous editions, which were dedicated to the 2D version (Diva). Half a day will be dedicated to the 3rd SeaDataCloud *Product Meeting*.
 
 ### Tuesday
-
-- [x] What is `divand`, differences with previous versions of diva?        
-- [x] Example with topography constrain, advection
-- [x] What is a jupyter-notebook?                    
-- [x] Demo CINECA jupyterhub        
+What is `divand`, differences with previous versions of diva?           
+Example with topography constrain, advection      
+What is a [jupyter-notebook](http://jupyter.org/)?                       
+Demo CINECA jupyterhub        
 
 ### Wednesday
 
-Basic commands with julia and major differences with matlab/python    All
-How to run `divand` (common dataset) using prepared notebooks and Black Sea ODV data
-Preparation of topography
-Read data
+Basic commands with [Julia](https://julialang.org/) and major differences with MATLAB and Python      
+How to run `divand` (common dataset) using prepared notebooks and Black Sea ODV data       
+Preparation of topography      
+Data reading           
 
 ### Thursday
-Configuration for regional products                        
-Discussion: list of priorities of features from DIVA implemented in new version DIVAnd
-
+Configuration for regional products                          
+Discussion: priorities of features from `Diva` implemented in new version `divand`     
 
 ### Friday
-Parallel session between
-Product Meeting
-Question and answers and advanced topics
-advection?
+Parallel session between:     
+SeaDataCloud *Product Meeting*      
+Question and answers and advanced topics (advection, reference fields, ...)
+
+## Preparation
+
+Ideally, participants will have a laptop with:     
+16 GB RAM memory and     
+sufficient free disk space (approx. 50 GB).
+
+### Installation
+
+* [Julia](https://julialang.org/downloads/) language
+* [IJulia](https://github.com/JuliaLang/IJulia.jl), the Julia kernel for Jupyter.
+* [OceanDataView](https://odv.awi.de/), to pre-process the data files.
+* [Nco](http://nco.sourceforge.net/), a set of netCDF operators for regridding, editing etc.
+
+### Before the workshop...
+
+If you want to use your own dataset, please verify that it has been quality controlled.     
+Bring power adapters if need (check https://www.power-plugs-sockets.com/belgium/).     
+If your institution is part of [eduroam](https://www.eduroam.org/), be sure to have your credentials for the wifi connexion.
