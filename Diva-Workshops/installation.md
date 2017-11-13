@@ -1,3 +1,24 @@
+* Install [https://julialang.org/downloads/](Julia). You will need the latest version 0.6. (Older versions are not supported)
+* Install `divand`. Launch julia and in the terminal issue the following command:
+
+```julia
+Pkg.clone("https://github.com/gher-ulg/divand.jl")
+```
+
+Copying and pasting commands in a terminal:
+* Windows user should have a look at this to [https://blogs.msdn.microsoft.com/adioltean/2004/12/27/useful-copypaste-trick-in-cmd-exe/](enable the quick edit mode) to facilitate copying and pasting commands. 
+
+* It is highly recommended to install also `IJulia` for the workshop. For the plotting we will use `PyPlot`. These two packages can be installed using the following commands. 
+
+```julia
+Pkg.add("PyPlot")
+Pkg.add("IJulia")
+```
+Installation can take a couple of minutes.
+
+---
+
+JM version:
 
 Install anaconda: [https://conda.io/docs/user-guide/install/index.html](https://conda.io/docs/user-guide/install/index.html) 
 
