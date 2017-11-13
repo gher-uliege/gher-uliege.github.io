@@ -1,3 +1,6 @@
+# Installation
+
+
 * Install [Julia](https://julialang.org/downloads/). You will need the latest version 0.6. (Older versions are not supported)
 * Install `divand`. Launch julia and in the terminal issue the following command:
 
@@ -14,7 +17,39 @@ Copying and pasting commands in a terminal:
 Pkg.add("PyPlot")
 Pkg.add("IJulia")
 ```
-Installation can take a couple of minutes and will tabe about 2 GB of disk space.
+Installation can take a couple of minutes and will tabe about 3 GB of disk space.
+
+
+# Testing your installation
+
+* In the Julia terminal, please issue the following commands to test `divand`:
+
+```julia
+Pkg.test("divand");
+```
+All tests should succseed.
+
+* Testing `PyPlot`. Again in the Julia terminal, please issue the following commands:
+
+```julia
+using PyPlot
+plot(1:10)
+```
+
+A new window should open with a straight line.
+
+* Testing `IJulia`. Issue the following commands in a Julia terminal:
+
+```julia
+using IJulia
+notebook()
+```
+
+A new browser window should open. Then, click on New => Julia 0.6. In the textbox, type 1+2 and then hit `Control-Enter`. The answer should be 3!
+
+
+
+
 
 ---
 
