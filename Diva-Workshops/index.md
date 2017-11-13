@@ -18,7 +18,7 @@ The 2018 edition will take place in [Liège](http://www.liege.be/tourisme-en), B
 Details concerning the exact room will be provided soon.     
 [How to get there?](howtogetthere.md)
 
-## Program
+## Preliminary program
 
 The workshop will be focused on `divand` (n-dimensional interpolation), unlike the previous editions, which were dedicated to the 2D version (Diva). Half a day will be dedicated to the 3rd SeaDataCloud *Product Meeting*.
 
