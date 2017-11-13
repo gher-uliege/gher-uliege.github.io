@@ -109,8 +109,9 @@ Run `Pkg.add("Roots")` to install the Roots package.
 
 ## C runtime library when calling PyPlot
 
-`R6034 an application has made an attempt to load the c runtime library incorrectly` on Windows 10 with julia 0.6.1, matplotlib 2.1.0, PyPlot 2.3.2:
+`R6034 an application has made an attempt to load the C runtime library incorrectly` on Windows 10 with julia 0.6.1, matplotlib 2.1.0, PyPlot 2.3.2:
 
 ```julia
 ENV["MPLBACKEND"]="qt4agg"
 ```
+You can put this line in a file `.juliarc.jl` placed in your home directory (the output of `homedir()` in Julia).
