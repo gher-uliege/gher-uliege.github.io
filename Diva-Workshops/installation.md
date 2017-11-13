@@ -97,10 +97,20 @@ used (remember, julia does some compilations).
 3. Then in IJulia `Pkg.update()`
 
 
+# Troubleshooting
+
 Depending on your current Julia setup, installing divand might ask for
 installation of additional packages. This will clearly been shown
 for example
 ```julia
 LoadError: ArgumentError: Module Roots not found in current path.
 Run `Pkg.add("Roots")` to install the Roots package.
+```
+
+## C runtime library when calling PyPlot
+
+`R6034 an application has made an attempt to load the c runtime library incorrectly` on Windows 10 with julia 0.6.1, matplotlib 2.1.0, PyPlot 2.3.2:
+
+```julia
+ENV["MPLBACKEND"]="qt4agg"
 ```
