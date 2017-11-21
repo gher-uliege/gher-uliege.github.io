@@ -50,7 +50,7 @@ The workshop will be focused on `divand` (n-dimensional interpolation), unlike t
 **[D]** Discussion: priorities of features from `Diva` implemented in new version `divand`     
 
 ### Friday
-Morning:
+Morning:     
 **[E]** Generation of regional products and optimisation
 
 Afternoon (finish at 3PM), parallel session:     
