@@ -15,9 +15,14 @@ From 3 to 6 of April, 2018.
 ### Venue
 
 The 2018 edition will be hosted by the University of Liège, in the center of [Liège](http://www.liege.be/tourisme-en), Belgium.    
-The meeting room is the 5/16 in the building A2 (see [map](https://www.campus.uliege.be/cms/c_1771004/en/a2-faculte-de-philosophie-et-lettres)). 
+The meeting room is the 5/16 in the building A2 (see [map](https://www.campus.uliege.be/cms/c_1771004/en/a2-faculte-de-philosophie-et-lettres)).
 
 [How to get there?](howtogetthere.md)
+
+### Accommodations
+
+Participants are invited to consult to following list:     
+http://labos.ulg.ac.be/gher/home/colloquium/colloquium-2018/venue/accommodation/
 
 ## Preliminary program
 
