@@ -6,16 +6,17 @@ This page provide the relevant information about the Diva user workshops organis
 
 ### Participants
 
-Participants are expected to be partners of [SeaDataCloud](https://www.seadatanet.org/) or EMODnet [Chemistry](http://www.emodnet-chemistry.eu/) or [Biology](http://www.emodnet-biology.eu/). Other scientists or data managers may request an invitation by contacting the organisers.     Priority will be given to those partners responsible for the Product preparation.
+Participants are expected to be partners of [SeaDataCloud](https://www.seadatanet.org/) or EMODnet [Chemistry](http://www.emodnet-chemistry.eu/) or [Biology](http://www.emodnet-biology.eu/) lots. Other scientists or data managers may request an invitation by contacting the organisers.     
+Priority will be given to those partners responsible for the Product preparation.
 
 ### Dates
 
-From 3 to 6 of April, 2018.
+From Tuesday 3 April (1.30 PM) to Friday 6 April (3 PM), 2018.
 
 ### Venue
 
 The 2018 edition will be hosted by the University of Liège, in the center of [Liège](http://www.liege.be/tourisme-en), Belgium.    
-The meeting room is the 5/16 in the building A2 (see [map](https://www.campus.uliege.be/cms/c_1771004/en/a2-faculte-de-philosophie-et-lettres)).
+The meeting room is the **5/16** in the building **A2** (see [map](https://www.campus.uliege.be/cms/c_1771004/en/a2-faculte-de-philosophie-et-lettres)).
 
 [How to get there?](howtogetthere.md)
 
@@ -26,13 +27,13 @@ http://labos.ulg.ac.be/gher/home/colloquium/colloquium-2018/venue/accommodation/
 
 ## Preliminary program
 
-The workshop will be focused on `divand` (n-dimensional interpolation), unlike the previous editions, which were dedicated to the 2D version (Diva). Half a day will be dedicated to the 3rd SeaDataCloud *Product Meeting*.
+The workshop will be focused on `divand` (n-dimensional interpolation), unlike the previous editions, which were dedicated to the 2D version (Diva). A specific session will be dedicated to the 3rd SeaDataCloud *Product Meeting* on Friday afternoon.
 
-**[P]** denote presentations     
-**[E]** denote exercises
-**[D]** denote discussions
+**[P]** denote presentations       
+**[E]** denote exercises      
+**[D]** denote discussions     
 
-### Tuesday (start at 1.30 PM)
+### Tuesday (starting at 1.30 PM)
 **[P]** What is `divand`, differences with previous versions of Diva?           
 **[E]** Example with topography constrain, advection      
 **[P]** What is a [jupyter-notebook](http://jupyter.org/)?                       
@@ -56,6 +57,8 @@ Morning:
 Afternoon (finish at 3PM), parallel session:     
 **[D]** SeaDataCloud *Product Meeting*      
 **[D]** Question and answers and advanced topics (advection, reference fields, ...)
+
+Meeting closure: 3 PM.
 
 ## Preparation
 
