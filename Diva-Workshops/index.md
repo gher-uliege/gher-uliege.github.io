@@ -32,7 +32,7 @@ The workshop will be focused on `divand` (n-dimensional interpolation), unlike t
 **[E]** denote exercises
 **[D]** denote discussions
 
-### Tuesday
+### Tuesday (start at 1.30 PM)
 **[P]** What is `divand`, differences with previous versions of Diva?           
 **[E]** Example with topography constrain, advection      
 **[P]** What is a [jupyter-notebook](http://jupyter.org/)?                       
@@ -50,7 +50,10 @@ The workshop will be focused on `divand` (n-dimensional interpolation), unlike t
 **[D]** Discussion: priorities of features from `Diva` implemented in new version `divand`     
 
 ### Friday
-Parallel session:     
+Morning:
+**[E]** Generation of regional products and optimisation
+
+Afternoon (finish at 3PM), parallel session:     
 **[D]** SeaDataCloud *Product Meeting*      
 **[D]** Question and answers and advanced topics (advection, reference fields, ...)
 
