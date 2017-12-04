@@ -1,3 +1,8 @@
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../assets/css/academicons.css">
+</head>
+
 # Diva Workshop -- 2018
 
 This page provide the relevant information about the Diva user workshops organised in the frame of H2020 [SeaDataCloud](https://www.seadatanet.org/) project. [`Diva`](https://github.com/gher-ulg/DIVA) and [`divand`](https://github.com/gher-ulg/divand.jl) are software tools implementing advanced techniques to generate gridded fields from in situ observations.
@@ -11,52 +16,51 @@ Priority will be given to those partners responsible for the Product preparation
 
 ### Dates
 
-From Tuesday 3 April (1.30 PM) to Friday 6 April (3 PM), 2018.
+<i class="fa fa-calendar-check-o" aria-hidden="true"></i> From Tuesday 3 April (1.30 PM) to Friday 6 April (3 PM), 2018.
 
 ### Venue
 
 The 2018 edition will be hosted by the University of Liège, in the center of [Liège](http://www.liege.be/tourisme-en), Belgium.    
 The meeting room is the **5/16** in the building **A2** (see [map](https://www.campus.uliege.be/cms/c_1771004/en/a2-faculte-de-philosophie-et-lettres)).
 
-[How to get there?](howtogetthere.md)
+[How to get to Liège?](howtogetthere.md)
 
 ### Accommodations
 
-Participants are invited to consult to following list:     
-http://labos.ulg.ac.be/gher/home/colloquium/colloquium-2018/venue/accommodation/
+<i class="fa fa-bed" aria-hidden="true"></i> Participants are invited to consult the following [list](http://labos.ulg.ac.be/gher/home/colloquium/colloquium-2018/venue/accommodation/).
 
 ## Preliminary program
 
 The workshop will be focused on `divand` (n-dimensional interpolation), unlike the previous editions, which were dedicated to the 2D version (Diva). A specific session will be dedicated to the 3rd SeaDataCloud *Product Meeting* on Friday afternoon.
 
-**[P]** denote presentations       
-**[E]** denote exercises      
-**[D]** denote discussions     
+<i class="fa fa-television" aria-hidden="true"></i> denote presentations     
+<i class="fa fa-cog fa-spin"></i> denote exercises      
+<i class="fa fa-comments" aria-hidden="true"></i> denote discussions     
 
 ### Tuesday (starting at 1.30 PM)
-**[P]** What is `divand`, differences with previous versions of Diva?           
-**[E]** Example with topography constrain, advection      
-**[P]** What is a [jupyter-notebook](http://jupyter.org/)?                       
-**[P/E]** Demo CINECA jupyterhub        
+<i class="fa fa-television" aria-hidden="true"></i> What is `divand`, differences with previous versions of Diva?           
+<i class="fa fa-cog fa-spin"></i> Example with topography constrain, advection      
+<i class="fa fa-television" aria-hidden="true"></i> What is a [jupyter-notebook](http://jupyter.org/)?                       
+<i class="fa fa-television" aria-hidden="true"></i> + <i class="fa fa-cog fa-spin"></i> Demo CINECA jupyterhub        
 
 ### Wednesday
 
-**[P/E]** Basic [Julia](https://julialang.org/) commands and major differences with MATLAB and Python      
-**[E]** How to run `divand` (common dataset) using prepared notebooks and Black Sea ODV data       
-**[E]** Preparation of topography      
-**[E]** Data reading           
+<i class="fa fa-television" aria-hidden="true"></i> <i class="fa fa-cog fa-spin"></i> Basic [Julia](https://julialang.org/) commands and major differences with MATLAB and Python      
+<i class="fa fa-cog fa-spin"></i> How to run `divand` (common dataset) using prepared notebooks and Black Sea ODV data       
+<i class="fa fa-cog fa-spin"></i> Preparation of topography      
+<i class="fa fa-cog fa-spin"></i> Data reading           
 
 ### Thursday
-**[E]** Configuration for regional products                          
-**[D]** Discussion: priorities of features from `Diva` implemented in new version `divand`     
+<i class="fa fa-cog fa-spin"></i> Configuration for regional products                          
+<i class="fa fa-comments" aria-hidden="true"></i> Discussion: priorities of features from `Diva` implemented in new version `divand`     
 
 ### Friday
 Morning:     
-**[E]** Generation of regional products and optimisation
+<i class="fa fa-cog fa-spin"></i> Generation of regional products and optimisation
 
 Afternoon (finish at 3PM), parallel session:     
-**[D]** SeaDataCloud *Product Meeting*      
-**[D]** Question and answers and advanced topics (advection, reference fields, ...)
+<i class="fa fa-comments" aria-hidden="true"></i> SeaDataCloud *Product Meeting*      
+<i class="fa fa-comments" aria-hidden="true"></i> Question and answers and advanced topics (advection, reference fields, ...)
 
 Meeting closure: 3 PM.
 
@@ -65,6 +69,8 @@ Meeting closure: 3 PM.
 Ideally, participants will have with them a laptop with:     
 16 GB RAM memory and     
 sufficient free disk space (approx. 50 GB).
+
+You may also need to check the list of [acronyms](acronyms.md).
 
 ### Installation
 
@@ -77,6 +83,6 @@ More details about the procedure: [installation](installation.md).
 
 ### Before the workshop...
 
-If you plan to use your own dataset, please verify that it has been quality controlled.     
-Bring power adapters if need (check https://www.power-plugs-sockets.com/belgium/).     
-If your institution is part of [eduroam](https://www.eduroam.org/), be sure to have your credentials for the wifi connexion.
+<i class="fa fa-database" aria-hidden="true"></i> If you plan to use your own dataset, please verify that it has been quality controlled.     
+<i class="fa fa-plug" aria-hidden="true"></i> Bring power adapters if need (check https://www.power-plugs-sockets.com/belgium/).     
+<i class="fa fa-wifi" aria-hidden="true"></i> If your institution is part of [eduroam](https://www.eduroam.org/), be sure to have your credentials for the wifi connexion.
