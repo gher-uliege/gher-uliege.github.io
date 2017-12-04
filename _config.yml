@@ -1,1 +1,5 @@
 theme: jekyll-theme-slate
+plugins_dir: [font_awesome]
+exclude: [vendor]
+gems:
+  - jekyll-font-awesome-sass
