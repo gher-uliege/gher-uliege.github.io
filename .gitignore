@@ -7,3 +7,9 @@ Gemfile
 Gemfile.lock
 _site/
 vendor/
+*.bak
+*.swp
+*.log
+*/test*
+leaflet/lib
+_plugins/
