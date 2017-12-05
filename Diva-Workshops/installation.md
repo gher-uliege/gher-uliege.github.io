@@ -1,35 +1,69 @@
 # Installation
 
-
-* Install [Julia](https://julialang.org/downloads/). You will need the latest version 0.6. (Older versions are not supported)
-* Install `divand`. Launch julia and in the terminal issue the following command:
+* [Julia](https://julialang.org/downloads/). You will need the latest version (**0.6** as of December 2017). Older versions are not supported.
+* `divand`. Launch Julia and in the terminal issue the following command:
 
 ```julia
 Pkg.clone("https://github.com/gher-ulg/divand.jl")
 ```
 
-Copying and pasting commands in a terminal:
-* Windows user should have a look at this to [enable the quick edit mode](https://blogs.msdn.microsoft.com/adioltean/2004/12/27/useful-copypaste-trick-in-cmd-exe/) to facilitate copying and pasting commands. 
+* [`IJulia`](https://github.com/JuliaLang/IJulia.jl), the graphical notebook interface to Julia (highly recommended for the workshop).      
+[`PyPlot`](https://github.com/JuliaPy/PyPlot.jl) for the plotting.
 
-* It is highly recommended to install also `IJulia` for the workshop. For the plotting we will use `PyPlot`. These two packages can be installed using the following commands. 
-
+These two packages can be installed using the following commands.
 ```julia
 Pkg.add("PyPlot")
 Pkg.add("IJulia")
 ```
-Installation can take a couple of minutes and will tabe about 3 GB of disk space.
+Installation can take a couple of minutes and will take about 3 GB of disk space.
 
+## For Windows users
+
+The following procedure can be followed to install `divand`.
+
+* Install anaconda: [https://conda.io/docs/user-guide/install/index.html](https://conda.io/docs/user-guide/install/index.html)
+
+* Install IJulia:
+```julia
+Pkg.add("IJulia")
+```
+
+* Install Plots:
+```julia
+Pkg.add("Plots")
+```
+
+* Clone `divand` into the v0.6 julia directory:
+```bash
+cd .julia/v0.6/
+git clone git@github.com:gher-ulg/divand.jl.git
+```
+
+* Install Interpolations:
+```julia
+Pkg.add ("Interpolations")
+```
+Note: remove this command if we add a *required* into `divand` module.
+
+* Install PyPlot:
+```julia
+Pkg.add("PyPlot")
+```
+
+### Copying and pasting commands in a terminal
+
+Windows user should have a look at this to [enable the quick edit mode](https://blogs.msdn.microsoft.com/adioltean/2004/12/27/useful-copypaste-trick-in-cmd-exe/) to facilitate copying and pasting commands.
 
 # Testing your installation
 
-* In the Julia terminal, please issue the following commands to test `divand`:
+* In the Julia terminal, issue the following command to test `divand`:
 
 ```julia
 Pkg.test("divand");
 ```
-All tests should succseed.
+All tests should succeed.
 
-* Testing `PyPlot`. Again in the Julia terminal, please issue the following commands:
+* Testing `PyPlot`. Again in the Julia terminal, issue the following commands:
 
 ```julia
 using PyPlot
@@ -45,49 +79,13 @@ using IJulia
 notebook()
 ```
 
-A new browser window should open. Then, click on New => Julia 0.6. In the textbox, type 1+2 and then hit `Control-Enter`. The answer should be 3!
+A new browser window should open. Then, click on New => Julia 0.6. In the text box, type 1+2 and then hit `Control-Enter`. The answer should be 3!
 
-
-
-
-
----
-
-JM version:
-
-Install anaconda: [https://conda.io/docs/user-guide/install/index.html](https://conda.io/docs/user-guide/install/index.html) 
-
-Install IJulia:
-```julia
-Pkg.add("IJulia")
-```
-
-Install Plots:
-```julia
-Pkg.add("Plots")
-```
-
-Clone `divand` into the v0.6 julia directory:
-```bash
-cd .julia/v0.6/
-git clone git@github.com:gher-ulg/divand.jl.git
-```
-
-Install Interpolations:
-```julia
-Pkg.add ("Interpolations")
-```
-(remove if we add a *required* into divand module).
-
-Install PyPlot:
-```julia
-Pkg.add("PyPlot")
-```
 
 ### First steps with Jupyter and Julia
 
 When modifying the code, restart the kernel to make sure latest version is
-used (remember, julia does some compilations).
+used (remember, Julia does some compilations).
 
 
 #### Updating julia
