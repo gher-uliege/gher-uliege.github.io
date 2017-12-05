@@ -3,6 +3,10 @@
   <link rel="stylesheet" href="../assets/css/academicons.css">
 </head>
 
+Since 2006, we organize workshops for the users, principally members of the region groups responsible for the climatology production in [SeaDataNet](https://www.seadatanet.org/). During these workshop, several experts are present to help newcomers, but also latest developments are presented for advanced users. Generally a wish-list from users is established at the end of the workshop.
+
+[Previous workshops](./Previous-workshops.md): information about the previous workshops.
+
 # Diva Workshop -- 2018
 
 This page provide the relevant information about the Diva user workshops organised in the frame of H2020 [SeaDataCloud](https://www.seadatanet.org/) project. [`Diva`](https://github.com/gher-ulg/DIVA) and [`divand`](https://github.com/gher-ulg/divand.jl) are software tools implementing advanced techniques to generate gridded fields from in situ observations.
@@ -70,7 +74,7 @@ Ideally, participants will have with them a laptop with:
 16 GB RAM memory and     
 sufficient free disk space (approx. 50 GB).
 
-You may also need to check the list of [acronyms](acronyms.md).
+You may also need to check the list of [acronyms and definitions](acronyms.md).
 
 ### Installation
 
@@ -84,5 +88,5 @@ More details about the procedure: [installation](installation.md).
 ### Before the workshop...
 
 <i class="fa fa-database" aria-hidden="true"></i> If you plan to use your own dataset, please verify that it has been quality controlled.     
-<i class="fa fa-plug" aria-hidden="true"></i> Bring power adapters if need (check https://www.power-plugs-sockets.com/belgium/).     
+<i class="fa fa-plug" aria-hidden="true"></i> Bring power adapters if needed (<https://www.power-plugs-sockets.com/belgium/>).     
 <i class="fa fa-wifi" aria-hidden="true"></i> If your institution is part of [eduroam](https://www.eduroam.org/), be sure to have your credentials for the wifi connexion.
