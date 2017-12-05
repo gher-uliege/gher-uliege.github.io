@@ -7,9 +7,11 @@
 
 ## Tools
 
-We develop software tools for ocean sciences,     
+We develop software tools for ocean sciences (data analaysis, numerical modelling),     
 check our [<i class="fa fa-github" aria-hidden="true"></i> page](https://github.com/gher-ulg/) to discover them.
 
 ## Meetings and conferences
+
+<img src="./assets/img/academicroom.JPG" alt="Academic Room"/>
 
 [Diva Workshops](./Diva-Workshops/index.md)
