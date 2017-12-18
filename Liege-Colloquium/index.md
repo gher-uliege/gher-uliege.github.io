@@ -6,4 +6,5 @@ The web pages for the different editions are hosted on the [GHER website](http:/
 
 ### List of topics
 
-The previous topics are summarised in this [table](topics.md).
+The previous topics are summarised in this [table](topics.md) or
+visualised [here](topicwordle.html).

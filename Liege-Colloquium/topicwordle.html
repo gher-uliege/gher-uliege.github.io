@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Colloquium topics</title>
+    <script src="../js/d3/d3.js" charset="utf-8"></script>
+    <script src="../js/d3/d3.layout.cloud.js"></script>
+    <script src="../js/d3.wordcloud.js"></script>
+    <script src="../data/topicsWordle.js"></script>
+    <style type="text/css">
+		p {
+			font-family: 'helvetica neue', helvetica, sans-serif;
+		  letter-spacing: 1px;
+		  text-align: center;
+		  border: 2px solid rgba(0,0,200,0.6);
+		  background: rgba(233,233,233,0.3);
+		  color: rgba(0,0,200,0.6);
+		  box-shadow: 1px 1px 2px rgba(0,0,200,0.4);
+		  border-radius: 10px;
+		  padding: 3px 10px;
+		  display: inline-block;
+		  cursor:pointer;
+			}
+		</style>
+  </head>
+  <body style="text-align: center">
+    <div id='wordcloud'></div>
+    <p>Click on a word to know in which year(s) it appears in the topic</p>
+    <script>
+      d3.wordcloud()
+        .size([900, 500])
+        .fill(d3.scale.ordinal().range(["#A9A9A9", "#3CA6D6", "#5082D4", "#000000"]))
+        .words(words)
+        .onwordclick(function(d, i) {
+          console.log(d.text + ' ' + d.size + ' ' + d.yearlist);
+          var para = document.querySelector('p');
+    			para.textContent =  d.yearlist;
+          //if (d.yearlist) { window.location = d.href; }
+        })
+        .start();
+    </script>
+  </body>
+</html>
