@@ -209,7 +209,7 @@
   }
 
   function cloudRotate() {
-    return (~~(Math.random() * 6) - 3) * 45;
+    return (~~(Math.random() * 6) - 3) * 30;
   }
 
   function cloudPadding() {
