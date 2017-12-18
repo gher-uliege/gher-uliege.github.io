@@ -88,7 +88,7 @@ When modifying the code, restart the kernel to make sure latest version is
 used (remember, Julia does some compilations).
 
 
-#### Updating julia
+#### Updating Julia
 1. Download binaries, install as usual.     
 2. Run in Julia (not IJulia of Jupyter): `Pkg.build("IJulia")` or ??
 `Pkg.add("IJulia")``
