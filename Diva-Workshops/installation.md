@@ -1,8 +1,12 @@
 # Installation
 
-* [Julia](https://julialang.org/downloads/). You will need the latest version (**0.6** as of December 2017). Older versions are not supported.
-* `divand`. Launch Julia and in the terminal issue the following command:
-
+* [Julia](https://julialang.org/downloads/). You will need the latest version of
+the language (**0.6** as of December 2017). Older versions are not supported.
+* `DIVAnd`. Launch Julia, for example from a bash terminal:
+```bash
+julia
+```
+and in the terminal issue the following command:
 ```julia
 Pkg.clone("https://github.com/gher-ulg/divand.jl")
 ```
@@ -19,7 +23,7 @@ Installation can take a couple of minutes and will take about 3 GB of disk space
 
 ## For Windows users
 
-The following procedure can be followed to install `divand`.
+The procedure can be followed:
 
 * Install anaconda: [https://conda.io/docs/user-guide/install/index.html](https://conda.io/docs/user-guide/install/index.html)
 
@@ -33,7 +37,7 @@ Pkg.add("IJulia")
 Pkg.add("Plots")
 ```
 
-* Clone `divand` into the v0.6 julia directory:
+* Clone `DIVAnd` into the v0.6 julia directory:
 ```bash
 cd .julia/v0.6/
 git clone git@github.com:gher-ulg/divand.jl.git
@@ -43,7 +47,7 @@ git clone git@github.com:gher-ulg/divand.jl.git
 ```julia
 Pkg.add ("Interpolations")
 ```
-Note: remove this command if we add a *required* into `divand` module.
+Note: remove this command if we add a *required* into `DIVAnd` module.
 
 * Install PyPlot:
 ```julia
@@ -56,7 +60,7 @@ Windows user should have a look at this to [enable the quick edit mode](https://
 
 # Testing your installation
 
-* In the Julia terminal, issue the following command to test `divand`:
+* In the Julia terminal, issue the following command to test `DIVAnd`:
 
 ```julia
 Pkg.test("divand");
@@ -78,15 +82,12 @@ A new window should open with a straight line.
 using IJulia
 notebook()
 ```
-
 A new browser window should open. Then, click on New => Julia 0.6. In the text box, type 1+2 and then hit `Control-Enter`. The answer should be 3!
-
 
 ### First steps with Jupyter and Julia
 
 When modifying the code, restart the kernel to make sure latest version is
 used (remember, Julia does some compilations).
-
 
 #### Updating Julia
 1. Download binaries, install as usual.     
@@ -94,12 +95,11 @@ used (remember, Julia does some compilations).
 `Pkg.add("IJulia")``
 3. Then in IJulia `Pkg.update()`
 
-
 # Troubleshooting
 
-Depending on your current Julia setup, installing divand might ask for
-installation of additional packages. This will clearly been shown
-for example
+Depending on your current Julia setup, installing `DIVAnd` might ask for
+installation of additional packages. This will be explicitly shown,
+for example:
 ```julia
 LoadError: ArgumentError: Module Roots not found in current path.
 Run `Pkg.add("Roots")` to install the Roots package.
