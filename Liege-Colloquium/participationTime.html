@@ -1,0 +1,92 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Participation to the Liège Colloquium on Ocean Dynamics</title>
+
+
+		<!-- 1. Add these JavaScript inclusions in the head of your page -->
+		<script
+			  src="https://code.jquery.com/jquery-3.2.1.min.js"
+			  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+			  crossorigin="anonymous"></script>
+		<script type="text/javascript" src="https://code.highcharts.com/highcharts.js"></script>
+		<script type="text/javascript" src="https://code.highcharts.com/modules/data.js"></script>
+
+
+		<!-- 2. Add the JavaScript to initialize the chart on document ready -->
+		<script type="text/javascript">
+		$(document).ready(function() {
+
+
+			$.get('https://raw.githubusercontent.com/gher-ulg/Liege-Colloquium-on-Ocean-Dynamics/master/data/numParticipant.csv', function(csv) {
+			    $('#container').highcharts({
+
+			        data: {
+			            csv: csv
+			        },
+			        chart: {
+						type: 'column',
+						zoomType: 'x'
+					},
+			        title: {
+						text: 'Liège Colloquium on Ocean Dynamics'
+					},
+
+					tooltip: {
+					formatter: function () {
+						return 'The value for <b>' + this.x +
+								'</b> is <b>' + this.y + '</b>';
+						}
+					},
+
+					xAxis: {
+						tickInterval: 2,
+						tickWidth: 0,
+						gridLineWidth: 1,
+						gridLineDashStyle: 'longdash'
+					},
+					yAxis: {
+						title: {
+							text: null,
+						},
+						tickInterval: 20,
+						gridLineWidth: 1,
+						gridLineDashStyle: 'longdash'
+					},
+					tooltip: {
+						crosshairs: true
+					},
+					series: [{
+						name: 'Participants',
+					}],
+					legend: {
+						layout: 'vertical',
+						align: 'left',
+						verticalAlign: 'top',
+						floating: true,
+						borderColor: "#10929A",
+						backgroundColor: '#E3E3E3',
+						borderRadius: 7,
+						borderWidth: 2,
+						x: 90,
+						y: 60,
+						shadow: true
+					}
+
+			    });
+			});
+
+
+		});
+		</script>
+
+	</head>
+	<body>
+
+		<!-- 3. Add the container -->
+		<div id="container" style="width: 1000px; height: 600px; margin: 0 auto"></div>
+
+
+	</body>
+</html>
