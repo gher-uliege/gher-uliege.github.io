@@ -6,5 +6,7 @@ The web pages for the different editions are hosted on the [GHER website](http:/
 
 ### List of topics
 
-The previous topics are summarised in this [table](topics.md) or
-visualised [here](topicwordle.html).
+The previous topics are summarised in this [table](topics.md) and can be
+visualised by clicking on the image. <a href="topicwordle.html">
+<img src="../assets/img/clqwordle.png" alt="Topic wordle" style="width:400px;"/>
+</a>
