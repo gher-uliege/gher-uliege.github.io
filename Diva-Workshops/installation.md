@@ -23,7 +23,7 @@ Installation can take a couple of minutes and will take about 3 GB of disk space
 
 ## For Windows users
 
-The procedure can be followed:
+A possibility for the installation is to use Anaconda:
 
 * Install anaconda: [https://conda.io/docs/user-guide/install/index.html](https://conda.io/docs/user-guide/install/index.html)
 
