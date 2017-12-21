@@ -1,0 +1,224 @@
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="UTF-8">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Participation to the Liège Colloquium on Ocean Dynamics (1969 - 2018)</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.3/leaflet.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.3/leaflet.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.fullscreen/1.4.3/Control.FullScreen.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.6/MarkerCluster.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.6/MarkerCluster.Default.css">
+		<style>
+		#map {height: 800px}
+		.info { padding: 6px 8px; font: 18px/20px Arial, Helvetica, sans-serif; background: white; background: rgba(255,255,255,0.8); font-size: 16px; box-shadow: 0 0 15px rgba(0,0,0,0.2); border-radius: 5px; }
+		.info h4 { margin: 0 0 5px; color: #777;font-size: 2em}
+		.legend { text-align: left; line-height: 18px; color: #555} .legend i { font-size: 2.5em; width: 18px; height: 18px; float: left; margin-right: 8px; opacity: 0.7; }
+		</style>
+	</head>
+
+
+	<body class="">
+
+		<div id="map" style="height:800px"></div>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.heat/0.2.0/leaflet-heat.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.fullscreen/1.4.3/Control.FullScreen.min.js"></script>
+		<script tupe="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.6/leaflet.markercluster.js"></script>
+		<script src="https://d3js.org/d3.v4.min.js" charset="utf-8"></script>
+		<script src="https://d3js.org/d3-hexbin.v0.2.min.js"></script>
+		<script src="https://rawgit.com/Asymmetrik/leaflet-d3/master/dist/leaflet-d3.js" charset="utf-8"></script>
+		<script type="text/javascript" src="../js/basemaps.js"></script>
+		<script type="text/javascript" src="data/Participants.coords"></script>
+		<script type="text/javascript" src="data/ParticipantCountry1970-2017.geojson"></script>
+
+		<script>
+
+			var map = L.map('map',
+				{
+					fullscreenControl: true,
+				}
+			).setView([25, 0], 2)
+
+			map.createPane('labels');
+			map.getPane('labels').style.zIndex = 650;
+			map.getPane('labels').style.pointerEvents = 'none';
+
+			var CartoDBLabels = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}.png', {
+				attribution: '©OpenStreetMap, ©CartoDB',
+				pane: 'labels'
+			});
+
+			var CartoDBall = L.layerGroup([CartoDB, CartoDBLabels]);
+			CartoDBall.addTo(map);
+
+			var baseMaps = {
+				"CartoDB": CartoDBall,
+				"OpenStreetMap": OpenStreetMap_Mapnik,
+				"Stamen Terrain": Stamen_Terrain,
+				"ESRI Ocean Basemap": Esri_OceanBasemap
+			};
+
+
+			// control that shows state info on hover
+			var info = L.control();
+
+			info.onAdd = function (map) {
+				this._div = L.DomUtil.create('div', 'info');
+				this.update();
+				return this._div;
+			};
+
+			info.update = function (props) {
+				this._div.innerHTML = '<h4>Number of participants</h4>' +  (props ?
+					'<b>' + props.name + '</b><br />' + props.Participants
+					: '<b>Total number</b><br />' + "3309");
+			};
+
+			info.addTo(map);
+
+			var geojson;
+
+			// Extend the colormap (>25, >50?)
+			function getColor(d) {
+				return d > 100 ? '#0c2c84' :
+					   d > 50 ? '#225ea8' :
+					   d > 10  ? '#1d91c0' :
+					   d > 5  ? '#41b6c4' :
+					   d > 1  ? '#7fcdbb' :
+					   d > 0  ? '#ffffcc' :
+								'#ffffff';
+			}
+
+			function style(feature) {
+				return {
+					fillColor: getColor(feature.properties.Participants),
+					weight: .5,
+					opacity: .7,
+					color: 'black',
+					fillOpacity: 0.8
+				};
+			}
+
+			function highlightFeature(e) {
+				var layer = e.target;
+
+				layer.setStyle({
+					weight: 2,
+					color: '#666',
+					dashArray: '',
+					fillOpacity: 0.5
+				});
+
+				if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+					layer.bringToFront();
+				}
+
+				info.update(layer.feature.properties);
+			}
+
+			function resetHighlight(e) {
+				geojson.resetStyle(e.target);
+				info.update();
+			}
+
+			function zoomToFeature(e) {
+				map.fitBounds(e.target.getBounds());
+			}
+
+
+			function onEachFeature(feature, layer) {
+				layer.on({
+					mouseover: highlightFeature,
+					mouseout: resetHighlight,
+					click: zoomToFeature
+				});
+			}
+
+			geojson = L.geoJson(participants, {
+				style: style,
+				onEachFeature: onEachFeature
+			}).addTo(map)	;
+
+			var legend = L.control({position: 'bottomright'});
+			legend.onAdd = function (map) {
+
+				var div = L.DomUtil.create('div', 'info legend'),
+					grades = [0, 1, 5, 10, 50, 100],
+					labels = [],
+					from, to;
+
+				for (var i = 0; i < grades.length; i++) {
+					from = grades[i];
+					to = grades[i + 1];
+
+					labels.push(
+						'<i style="background:' + getColor(from + 1) + '"></i> ' +
+						from + (to ? '&ndash;' + to : '+'));
+				}
+
+				div.innerHTML = labels.join('<br>');
+				return div;
+			};
+
+			legend.addTo(map);
+
+			var heatStyle = {
+				gradient : {.65: "white", .75:"#FFFF36", .85:"#FF9D00", .9:"#FF1700", .95:"#900000", 1:"black"},
+				minOpacity: 0.95,
+                radius: 10,
+                blur: 10,
+			};
+
+			coordsPoints = coords.map(function (p) { return [p[0], p[1]]; });
+			coordsPointsHex = coords.map(function (p) { return [p[1], p[0]]; });
+
+			var markers = L.markerClusterGroup();
+			var circmarkers = L.layerGroup();
+
+			for (var i = 0; i < coords.length; i++) {
+				var a = coords[i];
+				var marker = L.marker(new L.LatLng(a[0], a[1]));
+				var circmarker = L.circleMarker(new L.LatLng(a[0], a[1]), {radius:1, color:"yellow"});
+				markers.addLayer(marker);
+				circmarkers.addLayer(circmarker);
+			}
+
+			//map.addLayer(circmarkers);
+			map.addLayer(markers);
+
+			var heatmap = L.heatLayer(coordsPoints, heatStyle);
+
+			var hexoptions = {
+					radius : 15,
+					opacity: 0.6,
+					duration: 200,
+					colorScaleExtent: [ 1, 20 ],
+					radiusScaleExtent: [ 1, undefined ],
+					colorRange: ['#FFFFFF', '#F1FF67', '#FF8C00', '#FF2300'],
+					//colorValue: function(d) { return Math.sqrt(d.length); },
+					radiusRange: [ 10, 15],
+				};
+
+			var hexLayer = L.hexbinLayer(hexoptions);
+			hexLayer.data(coordsPointsHex);
+			//hexLayer.addTo(map);
+
+			var overlayers = {
+				  "Choropleth map": geojson,
+					"Marker cluster": markers,
+					"Single dots": circmarkers,
+					"Heat map": heatmap,
+					"Hexbin": hexLayer,
+				};
+
+			L.control.layers(baseMaps, overlayers, {autoZIndex:true, collapsed:false}).addTo(map);
+
+
+
+		</script>
+
+
+
+</body></html>
