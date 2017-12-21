@@ -11,6 +11,14 @@ visualised by clicking on the image. <a href="topicwordle.html">
 <img src="../assets/img/clqwordle.png" alt="Topic wordle" style="width:400px;"/>
 </a>
 
+### Participation map
+
+Spatial distribution of the participants: [choropleth](https://en.wikipedia.org/wiki/Choropleth_map), hexbin and heat maps.
+
+<a href="participationMap.html">
+<img src="../assets/img/clq_choropleth.png" alt="Participation map" style="width:400px;"/>
+</a>
+
 ### Time series
 
 Time evolution of the number of participants, abstract submitted and
