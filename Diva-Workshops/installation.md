@@ -21,6 +21,8 @@ Pkg.add("IJulia")
 ```
 Installation can take a couple of minutes and will take about 3 GB of disk space.
 
+
+<!---
 ## For Windows users
 
 A possibility for the installation is to use Anaconda:
@@ -53,6 +55,7 @@ Note: remove this command if we add a *required* into `DIVAnd` module.
 ```julia
 Pkg.add("PyPlot")
 ```
+-->
 
 ### Copying and pasting commands in a terminal
 
@@ -82,24 +85,27 @@ A new window should open with a straight line.
 using IJulia
 notebook()
 ```
-A new browser window should open. Then, click on New => Julia 0.6. In the text box, type 1+2 and then hit `Control-Enter`. The answer should be 3!
+A new browser window should open. Then, click on New => Julia 0.6. In the text box, type `1+2` and then hit `Control-Enter`. The answer should be 3!
 
 ### First steps with Jupyter and Julia
 
-When modifying the code, restart the kernel to make sure latest version is
+If you modify `divand` module, restart the kernel to make sure latest version is
 used (remember, Julia does some compilations).
 
 #### Updating Julia
-1. Download binaries, install as usual.     
-2. Run in Julia (not IJulia of Jupyter): `Pkg.build("IJulia")` or ??
-`Pkg.add("IJulia")``
+
+1. Download binaries, install as usual.
+2. Run in Julia (not IJulia of Jupyter): `Pkg.build("IJulia")`
 3. Then in IJulia `Pkg.update()`
 
 # Troubleshooting
 
+## Installing additional packages
+
 Depending on your current Julia setup, installing `DIVAnd` might ask for
 installation of additional packages. This will be explicitly shown,
 for example:
+
 ```julia
 LoadError: ArgumentError: Module Roots not found in current path.
 Run `Pkg.add("Roots")` to install the Roots package.
