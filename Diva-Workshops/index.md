@@ -76,9 +76,11 @@ Meeting closure: 3 PM.
 
 ## Preparation
 
-Ideally, participants will have with them a laptop with:     
-16 GB RAM memory and     
-sufficient free disk space (approx. 50 GB).
+Participants will have with them a laptop with:     
+* 16 GB RAM memory and     
+* sufficient free disk space (approx. 50 GB).
+
+More resources might be necessary depending on the resolution and size of the studied domain.
 
 You may also need to check the list of [acronyms and definitions](acronyms.md).
 
