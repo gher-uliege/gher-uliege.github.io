@@ -1,18 +1,13 @@
 # Installation
 
-* [Julia](https://julialang.org/downloads/). You will need the latest version of
-the language (**0.6** as of December 2017). Older versions are not supported.
-* `DIVAnd`. Launch Julia, for example from a bash terminal:
-```bash
-julia
-```
-and in the terminal issue the following command:
+* You will need to install [Julia](https://julialang.org/downloads/). We will use the latest version, i.e. version **0.6** as of January 2018. Older versions are not supported.
+
+* You will need to install also `DIVAnd`. Launch Julia and in the terminal issue the following command:
 ```julia
 Pkg.clone("https://github.com/gher-ulg/divand.jl")
 ```
 
-* [`IJulia`](https://github.com/JuliaLang/IJulia.jl), the graphical notebook interface to Julia (highly recommended for the workshop).      
-[`PyPlot`](https://github.com/JuliaPy/PyPlot.jl) for the plotting.
+* Install also [`IJulia`](https://github.com/JuliaLang/IJulia.jl), the graphical notebook interface to Julia (highly recommended for the workshop) and [`PyPlot`](https://github.com/JuliaPy/PyPlot.jl) for the plotting.
 
 These two packages can be installed using the following commands.
 ```julia
