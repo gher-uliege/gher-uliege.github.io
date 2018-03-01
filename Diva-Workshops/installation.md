@@ -16,6 +16,12 @@ Pkg.add("IJulia")
 ```
 Installation can take a couple of minutes and will take about 3 GB of disk space.
 
+Make sure to use the package `Mustache` of version 0.3.1. You can verify the version of `Mustache` by running the command:
+
+```julia
+Pkg.installed("Mustache")
+```
+
 
 <!---
 ## For Windows users
