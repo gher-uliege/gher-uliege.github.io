@@ -21,9 +21,12 @@ Make sure to use the package `Mustache` of version 0.3.1. You can verify the ver
 
 ## For Windows users
 
-Windows 7/Windows Server 2012 users also require TLS "Easy Fix" update:
+Windows 7/Windows Server 2012 users also require [TLS "Easy Fix"](https://support.microsoft.com/en-us/help/3140245/update-to-enable-tls-1-1-and-tls-1-2-as-a-default-secure-protocols-in) update.
 
-https://support.microsoft.com/en-us/help/3140245/update-to-enable-tls-1-1-and-tls-1-2-as-a-default-secure-protocols-in
+### Copying and pasting commands in a terminal
+
+Windows user should have a look at this to [enable the quick edit mode](https://blogs.msdn.microsoft.com/adioltean/2004/12/27/useful-copypaste-trick-in-cmd-exe/) to facilitate copying and pasting commands.
+
 
 <!---
 
@@ -59,9 +62,6 @@ Pkg.add("PyPlot")
 ```
 -->
 
-### Copying and pasting commands in a terminal
-
-Windows user should have a look at this to [enable the quick edit mode](https://blogs.msdn.microsoft.com/adioltean/2004/12/27/useful-copypaste-trick-in-cmd-exe/) to facilitate copying and pasting commands.
 
 # Testing your installation
 
