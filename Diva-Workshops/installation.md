@@ -16,15 +16,16 @@ Pkg.add("IJulia")
 ```
 Installation can take a couple of minutes and will take about 3 GB of disk space.
 
-Make sure to use the package `Mustache` of version 0.3.1. You can verify the version of `Mustache` by running the command:
+Make sure to use the package `Mustache` of version 0.3.1. You can verify the version of `Mustache` by running the command `Pkg.installed("Mustache")`.
 
-```julia
-Pkg.installed("Mustache")
-```
 
+## For Windows users
+
+Windows 7/Windows Server 2012 users also require TLS "Easy Fix" update:
+
+https://support.microsoft.com/en-us/help/3140245/update-to-enable-tls-1-1-and-tls-1-2-as-a-default-secure-protocols-in
 
 <!---
-## For Windows users
 
 A possibility for the installation is to use Anaconda:
 
