@@ -47,18 +47,22 @@ The workshop will be focused on `DIVAnd` (n-dimensional interpolation), unlike t
 <i class="fa fa-cog fa-spin"></i> denote exercises      
 <i class="fa fa-comments" aria-hidden="true"></i> denote discussions     
 
-### Tuesday (starting at 1.30 PM)
-<i class="fa fa-television" aria-hidden="true"></i> What is `DIVAnd`, differences with previous versions of Diva?           
-<i class="fa fa-cog fa-spin"></i> Example with topography constrain, advection      
+### Tuesday
+
+Meeting pointing: side entrance (place Cockerill) at 1.15 PM.
+Lectures start at 1.30 PM
 <i class="fa fa-television" aria-hidden="true"></i> What is a [jupyter-notebook](http://jupyter.org/)?                       
-<i class="fa fa-television" aria-hidden="true"></i> + <i class="fa fa-cog fa-spin"></i> Demo CINECA jupyterhub        
+<i class="fa fa-television" aria-hidden="true"></i> <i class="fa fa-cog fa-spin"></i> Basic [Julia](https://julialang.org/) commands and major differences with MATLAB and Python
+<i class="fa fa-television" aria-hidden="true"></i>Introduction to variational analysis
 
 ### Wednesday
 
-<i class="fa fa-television" aria-hidden="true"></i> <i class="fa fa-cog fa-spin"></i> Basic [Julia](https://julialang.org/) commands and major differences with MATLAB and Python      
-<i class="fa fa-cog fa-spin"></i> How to run `DIVAnd` (common dataset) using prepared notebooks and Black Sea ODV data       
-<i class="fa fa-cog fa-spin"></i> Preparation of topography      
-<i class="fa fa-cog fa-spin"></i> Data reading           
+<i class="fa fa-television" aria-hidden="true"></i> + <i class="fa fa-cog fa-spin"></i> Demo CINECA jupyterhub
+<i class="fa fa-cog fa-spin"></i> Preparation of topography
+<i class="fa fa-cog fa-spin"></i> Data reading
+<i class="fa fa-cog fa-spin"></i> Parameter optimization
+<i class="fa fa-cog fa-spin"></i> How to run `DIVAnd` (common dataset) using prepared notebooks and sample data
+
 
 ### Thursday
 <i class="fa fa-cog fa-spin"></i> Configuration for regional products                          
