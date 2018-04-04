@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx creator="Wikiloc - https://www.wikiloc.com" version="1.1" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+  <metadata>
+    <name>Wikiloc - Maison Peket</name>
+    <author>
+      <name>sharlo</name>
+      <link href="https://www.wikiloc.com/wikiloc/user.do?id=458033">
+        <text>sharlo on Wikiloc</text>
+      </link>
+    </author>
+    <link href="https://www.wikiloc.com/hiking-trails/maison-peket-23744661">
+      <text>Maison Peket on Wikiloc</text>
+    </link>
+    <time>2018-04-04T15:23:34Z</time>
+  </metadata>
+  <trk>
+    <name>Maison Peket</name>
+    <cmt></cmt>
+    <desc></desc>
+    <trkseg>
+      <trkpt lat="50.641365" lon="5.575411">
+        <ele>73.233</ele>
+        <time>2018-04-04T15:24:01Z</time>
+      </trkpt>
+      <trkpt lat="50.641528" lon="5.575320">
+        <ele>72.723</ele>
+        <time>2018-04-04T15:24:41Z</time>
+      </trkpt>
+      <trkpt lat="50.641501" lon="5.575170">
+        <ele>73.615</ele>
+        <time>2018-04-04T15:25:21Z</time>
+      </trkpt>
+      <trkpt lat="50.641633" lon="5.575052">
+        <ele>73.108</ele>
+        <time>2018-04-04T15:26:01Z</time>
+      </trkpt>
+      <trkpt lat="50.641746" lon="5.574950">
+        <ele>73.325</ele>
+        <time>2018-04-04T15:26:41Z</time>
+      </trkpt>
+      <trkpt lat="50.641868" lon="5.574832">
+        <ele>73.816</ele>
+        <time>2018-04-04T15:27:21Z</time>
+      </trkpt>
+      <trkpt lat="50.642004" lon="5.574725">
+        <ele>73.620</ele>
+        <time>2018-04-04T15:28:01Z</time>
+      </trkpt>
+      <trkpt lat="50.642123" lon="5.574601">
+        <ele>72.717</ele>
+        <time>2018-04-04T15:28:41Z</time>
+      </trkpt>
+      <trkpt lat="50.642235" lon="5.574489">
+        <ele>71.927</ele>
+        <time>2018-04-04T15:29:21Z</time>
+      </trkpt>
+      <trkpt lat="50.642436" lon="5.574451">
+        <ele>70.599</ele>
+        <time>2018-04-04T15:30:01Z</time>
+      </trkpt>
+      <trkpt lat="50.642470" lon="5.574607">
+        <ele>70.289</ele>
+        <time>2018-04-04T15:30:41Z</time>
+      </trkpt>
+      <trkpt lat="50.642542" lon="5.574784">
+        <ele>69.994</ele>
+        <time>2018-04-04T15:31:21Z</time>
+      </trkpt>
+      <trkpt lat="50.642613" lon="5.574993">
+        <ele>70.082</ele>
+        <time>2018-04-04T15:32:01Z</time>
+      </trkpt>
+      <trkpt lat="50.642718" lon="5.575256">
+        <ele>70.043</ele>
+        <time>2018-04-04T15:32:41Z</time>
+      </trkpt>
+      <trkpt lat="50.642787" lon="5.575444">
+        <ele>70.017</ele>
+        <time>2018-04-04T15:33:21Z</time>
+      </trkpt>
+      <trkpt lat="50.642851" lon="5.575594">
+        <ele>70.308</ele>
+        <time>2018-04-04T15:34:01Z</time>
+      </trkpt>
+      <trkpt lat="50.642936" lon="5.575803">
+        <ele>70.610</ele>
+        <time>2018-04-04T15:34:41Z</time>
+      </trkpt>
+      <trkpt lat="50.643045" lon="5.576028">
+        <ele>70.331</ele>
+        <time>2018-04-04T15:35:21Z</time>
+      </trkpt>
+      <trkpt lat="50.643208" lon="5.575889">
+        <ele>70.895</ele>
+        <time>2018-04-04T15:36:01Z</time>
+      </trkpt>
+      <trkpt lat="50.643317" lon="5.575712">
+        <ele>71.082</ele>
+        <time>2018-04-04T15:36:41Z</time>
+      </trkpt>
+      <trkpt lat="50.643460" lon="5.575535">
+        <ele>71.052</ele>
+        <time>2018-04-04T15:37:21Z</time>
+      </trkpt>
+      <trkpt lat="50.643603" lon="5.575336">
+        <ele>71.844</ele>
+        <time>2018-04-04T15:38:01Z</time>
+      </trkpt>
+      <trkpt lat="50.643759" lon="5.575159">
+        <ele>72.294</ele>
+        <time>2018-04-04T15:38:41Z</time>
+      </trkpt>
+      <trkpt lat="50.643875" lon="5.575020">
+        <ele>72.949</ele>
+        <time>2018-04-04T15:39:21Z</time>
+      </trkpt>
+      <trkpt lat="50.644001" lon="5.574896">
+        <ele>73.772</ele>
+        <time>2018-04-04T15:40:01Z</time>
+      </trkpt>
+      <trkpt lat="50.644117" lon="5.574789">
+        <ele>74.513</ele>
+        <time>2018-04-04T15:40:41Z</time>
+      </trkpt>
+      <trkpt lat="50.644276" lon="5.574687">
+        <ele>75.914</ele>
+        <time>2018-04-04T15:41:21Z</time>
+      </trkpt>
+      <trkpt lat="50.644464" lon="5.574596">
+        <ele>77.508</ele>
+        <time>2018-04-04T15:42:01Z</time>
+      </trkpt>
+      <trkpt lat="50.644664" lon="5.574537">
+        <ele>77.779</ele>
+        <time>2018-04-04T15:42:41Z</time>
+      </trkpt>
+      <trkpt lat="50.644872" lon="5.574467">
+        <ele>74.750</ele>
+        <time>2018-04-04T15:43:21Z</time>
+      </trkpt>
+      <trkpt lat="50.644977" lon="5.574574">
+        <ele>72.554</ele>
+        <time>2018-04-04T15:44:01Z</time>
+      </trkpt>
+      <trkpt lat="50.644977" lon="5.574703">
+        <ele>72.481</ele>
+        <time>2018-04-04T15:44:41Z</time>
+      </trkpt>
+      <trkpt lat="50.645042" lon="5.574934">
+        <ele>70.941</ele>
+        <time>2018-04-04T15:45:21Z</time>
+      </trkpt>
+      <trkpt lat="50.645093" lon="5.575122">
+        <ele>70.383</ele>
+        <time>2018-04-04T15:46:01Z</time>
+      </trkpt>
+      <trkpt lat="50.645147" lon="5.575293">
+        <ele>69.993</ele>
+        <time>2018-04-04T15:46:41Z</time>
+      </trkpt>
+      <trkpt lat="50.645188" lon="5.575406">
+        <ele>69.868</ele>
+        <time>2018-04-04T15:47:21Z</time>
+      </trkpt>
+      <trkpt lat="50.645144" lon="5.575465">
+        <ele>70.047</ele>
+        <time>2018-04-04T15:48:01Z</time>
+      </trkpt>
+      <trkpt lat="50.645052" lon="5.575529">
+        <ele>70.129</ele>
+        <time>2018-04-04T15:48:41Z</time>
+      </trkpt>
+      <trkpt lat="50.644970" lon="5.575588">
+        <ele>70.121</ele>
+        <time>2018-04-04T15:49:21Z</time>
+      </trkpt>
+      <trkpt lat="50.644999" lon="5.575677">
+        <ele>70.008</ele>
+        <time>2018-04-04T15:50:01Z</time>
+      </trkpt>
+      <trkpt lat="50.645030" lon="5.575814">
+        <ele>70.076</ele>
+        <time>2018-04-04T15:50:41Z</time>
+      </trkpt>
+      <trkpt lat="50.645050" lon="5.575881">
+        <ele>69.987</ele>
+        <time>2018-04-04T15:51:21Z</time>
+      </trkpt>
+      <trkpt lat="50.645003" lon="5.575905">
+        <ele>69.781</ele>
+        <time>2018-04-04T15:52:01Z</time>
+      </trkpt>
+      <trkpt lat="50.645021" lon="5.576015">
+        <ele>69.478</ele>
+        <time>2018-04-04T15:52:41Z</time>
+      </trkpt>
+    </trkseg>
+  </trk></gpx>
