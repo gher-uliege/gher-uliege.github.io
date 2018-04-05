@@ -87,7 +87,7 @@ A new window should open with a straight line.
 using IJulia
 notebook()
 ```
-A new browser window should open. Then, click on New => Julia 0.6. In the text box, type `1+2` and then hit `Control-Enter`. The answer should be 3! Normally your notebook should open in your home directory so you see the files/directories you have there. If you want to see another directory tree you can try to open the browser interface with 
+A new browser window should open. Then, click on New => Julia 0.6. In the text box, type `1+2` and then hit `Control-Enter`. The answer should be 3! Normally your notebook should open in your home directory so you see the files/directories you have there. If you want to see another directory tree, you can try to open the browser interface with 
 
 ```julia
 using IJulia
