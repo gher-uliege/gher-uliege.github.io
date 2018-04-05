@@ -70,7 +70,7 @@ Pkg.add("PyPlot")
 ```julia
 Pkg.test("divand");
 ```
-All tests should succeed.
+All tests should succeed but it might need some time to execute completely. Be patient.
 
 * Testing `PyPlot`. Again in the Julia terminal, issue the following commands:
 
