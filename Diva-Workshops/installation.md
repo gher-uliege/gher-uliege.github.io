@@ -99,11 +99,11 @@ notebook(dir="D:/myotherdirectory/onanotherdisk/")
 If you modify `divand` module, restart the kernel to make sure latest version is
 used (remember, Julia does some compilations).
 
-#### Updating Julia
+## Updating Julia
 
 1. Download binaries, install as usual.
-2. Run in Julia (not IJulia of Jupyter): `Pkg.build("IJulia")`
-3. Then in IJulia `Pkg.update()`
+2. Run in Julia (NOT IJulia of Jupyter): `Pkg.build("IJulia")`
+3. Then (in IJulia or Julia) `Pkg.update()`
 
 # Troubleshooting
 
