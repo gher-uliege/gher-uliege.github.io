@@ -33,6 +33,7 @@
 		<script type="text/javascript" src="../js/Leaflet.Geodesic.js"></script>
 		<script type="text/javascript" src="data/Participants.coords"></script>
 		<script type="text/javascript" src="data/FrqParticipants.coords"></script>
+		<script type="text/javascript" src="data/DistParticipants.coords"></script>
 		<script type="text/javascript" src="data/ParticipantCountry1970-2017.geojson"></script>
 
 		<script>
@@ -90,9 +91,9 @@
 			var geojson;
 
 			var GeodesicOptions = {
-				weight: 2,
+				weight: 4,
 				opacity: .7,
-				color: 'blue',
+				color: '#00D118',
 				steps: 40,
 			};
 
@@ -200,6 +201,7 @@
 			var markers = L.markerClusterGroup();
 			var circmarkers = L.layerGroup();
 			var circmarkersFrq = L.layerGroup();
+			var circmarkersDist = L.layerGroup();
 
 			for (var i = 0; i < coords.length; i++) {
 				var a = coords[i];
@@ -214,6 +216,15 @@
 				var marker = L.circleMarker(new L.LatLng(coordsFrq[i][0], coordsFrq[i][1]),
 				{radius:7, color:"red"});
 				circmarkersFrq.addLayer(marker);
+			}
+
+			//Add largest-distance travelers
+			for (var i = 0; i < coordsDist.length; i++) {
+				var marker = L.circleMarker(new L.LatLng(coordsDist[i][0], coordsDist[i][1]),
+				{radius:7, color:GeodesicOptions["color"]});
+				var distLine = L.geodesic([[origin, coordsDist[i]]], GeodesicOptions);
+				circmarkersDist.addLayer(marker);
+				circmarkersDist.addLayer(distLine);
 			}
 
 			//map.addLayer(circmarkers);
@@ -242,7 +253,8 @@
 					"Single dots": circmarkers,
 					"Heat map": heatmap,
 					"Hexbin": hexLayer,
-					"Most regular participants": circmarkersFrq
+					"Most regular participants": circmarkersFrq,
+					"Longest trips": circmarkersDist
 				};
 
 			L.control.layers(baseMaps, overlayers, {autoZIndex:true, collapsed:false}).addTo(map);
