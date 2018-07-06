@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>
-	Hotel in Liège
+	DIVA workshop
   </title>
 
   <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" rel="stylesheet">
@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.fullscreen/1.4.3/Control.FullScreen.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-omnivore/0.3.4/leaflet-omnivore.js"></script>
   <link rel="stylesheet" href="../css/leaflet.awesome-markers.css">
 		<style>
 		#map {height: 600px; width: 50%}
@@ -24,10 +25,11 @@
 
 		<div id="map"></div>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.3/leaflet.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.fullscreen/1.4.3/Control.FullScreen.min.js"></script>
       <script src="../js/leaflet.awesome-markers.js"></script>
 
 		  <script>
-			var map = L.map('map', {fullscreenControl: true}).setView([50.635, 5.58], 13);;
+			var map = L.map('map', {fullscreenControl: true}).setView([50.6435, 5.5746], 16);
 
 			var OpenStreetMap_Mapnik = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 						maxZoom: 19,
@@ -55,13 +57,33 @@
         iconSize:     [32, 32],
       });
 
+      var customLayer = L.geoJson(null, {
+        style: function(feature) {
+          return {
+            color: 'green',
+            weight: 4,
+            opacity: .8,
+            };
+        }
+      });
+
       L.marker([50.624,5.567], {icon: trainIcon}).addTo(map);
       L.marker([50.6264,5.5659], {icon: hotelIcon}).addTo(map);
 
+      var start = L.circleMarker([50.641365, 5.575411], {radius:15, color: 'green', opacity: .8}).addTo(map);
+      var finish = L.circleMarker([50.645021, 5.576015], {radius:15, color: 'red', opacity: .8}).addTo(map);
+
+      var track1 = omnivore.gpx("assets/maison-peket.gpx", null, customLayer).addTo(map);
 
 			map.addLayer(OpenStreetMap_Mapnik)
 
-			L.control.layers(baseMaps, null, {autoZIndex:false, collapsed:false}).addTo(map);
+      var overlayers = {
+        "Starting point": start,
+        "Finish!!!": finish,
+        "Easy track": track1,
+      };
+
+			L.control.layers(baseMaps, overlayers, {autoZIndex:false, collapsed:false}).addTo(map);
 
 		  </script>
       <div> Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>

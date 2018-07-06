@@ -67,7 +67,7 @@ Pkg.add("PyPlot")
 ```julia
 Pkg.test("DIVAnd");
 ```
-All tests should succeed.
+All tests should succeed but it might need some time to execute completely. Be patient.
 
 * Testing `PyPlot`. Again in the Julia terminal, issue the following commands:
 
@@ -84,18 +84,23 @@ A new window should open with a straight line.
 using IJulia
 notebook()
 ```
-A new browser window should open. Then, click on New => Julia 0.6. In the text box, type `1+2` and then hit `Control-Enter`. The answer should be 3!
+A new browser window should open. Then, click on New => Julia 0.6. In the text box, type `1+2` and then hit `Control-Enter`. The answer should be 3! Normally your notebook should open in your home directory so you see the files/directories you have there. If you want to see another directory tree, you can try to open the browser interface with 
+
+```julia
+using IJulia
+notebook(dir="D:/myotherdirectory/onanotherdisk/")
+```
 
 ### First steps with Jupyter and Julia
 
 If you modify `DIVAnd` module, restart the kernel to make sure latest version is
 used (remember, Julia does some compilations).
 
-#### Updating Julia
+## Updating Julia
 
 1. Download binaries, install as usual.
-2. Run in Julia (not IJulia of Jupyter): `Pkg.build("IJulia")`
-3. Then in IJulia `Pkg.update()`
+2. Run in Julia (NOT IJulia of Jupyter): `Pkg.build("IJulia")`
+3. Then (in IJulia or Julia) `Pkg.update()`
 
 # Troubleshooting
 
