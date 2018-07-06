@@ -2,10 +2,7 @@
 
 * You will need to install [Julia](https://julialang.org/downloads/). We will use the latest version, i.e. version **0.6** as of January 2018. Older versions are not supported.
 
-* You will need to install also `DIVAnd`. Launch Julia and in the terminal issue the following command:
-```julia
-Pkg.clone("https://github.com/gher-ulg/divand.jl")
-```
+* You will need to install also `DIVAnd` following (https://github.com/gher-ulg/DIVAnd.jl/#installing)[these instructions].
 
 * Install also [`IJulia`](https://github.com/JuliaLang/IJulia.jl), the graphical notebook interface to Julia (highly recommended for the workshop) and [`PyPlot`](https://github.com/JuliaPy/PyPlot.jl) for the plotting.
 
@@ -16,7 +13,7 @@ Pkg.add("IJulia")
 ```
 Installation can take a couple of minutes and will take about 3 GB of disk space.
 
-Make sure to use the package `Mustache` of version 0.3.1. You can verify the version of `Mustache` by running the command `Pkg.installed("Mustache")`.
+Make sure to use the package `Mustache` of version 0.3.2 or later. You can verify the version of `Mustache` by running the command `Pkg.installed("Mustache")`.
 
 
 ## For Windows users
@@ -47,7 +44,7 @@ Pkg.add("Plots")
 * Clone `DIVAnd` into the v0.6 julia directory:
 ```bash
 cd .julia/v0.6/
-git clone git@github.com:gher-ulg/divand.jl.git
+git clone git@github.com:gher-ulg/DIVAnd.jl.git
 ```
 
 * Install Interpolations:
@@ -68,7 +65,7 @@ Pkg.add("PyPlot")
 * In the Julia terminal, issue the following command to test `DIVAnd`:
 
 ```julia
-Pkg.test("divand");
+Pkg.test("DIVAnd");
 ```
 All tests should succeed.
 
@@ -91,7 +88,7 @@ A new browser window should open. Then, click on New => Julia 0.6. In the text b
 
 ### First steps with Jupyter and Julia
 
-If you modify `divand` module, restart the kernel to make sure latest version is
+If you modify `DIVAnd` module, restart the kernel to make sure latest version is
 used (remember, Julia does some compilations).
 
 #### Updating Julia

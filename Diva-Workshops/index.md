@@ -88,6 +88,11 @@ More resources might be necessary depending on the resolution and size of the st
 
 You may also need to check the list of [acronyms and definitions](acronyms.md).
 
+## Workshop material
+
+The notebooks are availabe in the folder `notebooks` in the [zip file](https://github.com/gher-ulg/Diva-Workshops/archive/master.zip).
+Follow the instructions [here](https://github.com/gher-ulg/Diva-Workshops/tree/master/notebooks#how-to-download-ipynb-files-from-github) to download and open the notebook files.
+
 ### Installation
 
 * [Julia](https://julialang.org/downloads/) language
