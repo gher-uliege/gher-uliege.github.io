@@ -103,4 +103,4 @@ More information is available at: https://github.com/JuliaLang/IJulia.jl#updatin
 
 # Troubleshooting
 
-For any installation issue please have a look at the [troubleshooting section])(https://gher-ulg.github.io/DIVAnd.jl/latest/#Troubleshooting-1) in the documentation.
+For any installation issue please have a look at the [troubleshooting section](https://gher-ulg.github.io/DIVAnd.jl/latest/#Troubleshooting-1) in the documentation.
