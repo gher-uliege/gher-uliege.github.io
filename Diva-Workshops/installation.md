@@ -2,10 +2,7 @@
 
 * You will need to install [Julia](https://julialang.org/downloads/). We will use the latest version, i.e. version **0.6** as of January 2018. Older versions are not supported.
 
-* You will need to install also `DIVAnd`. Launch Julia and in the terminal issue the following command:
-```julia
-Pkg.clone("https://github.com/gher-ulg/divand.jl")
-```
+* You will need to install also `DIVAnd` following [these instructions](https://github.com/gher-ulg/DIVAnd.jl/#installing).
 
 * Install also [`IJulia`](https://github.com/JuliaLang/IJulia.jl), the graphical notebook interface to Julia (highly recommended for the workshop) and [`PyPlot`](https://github.com/JuliaPy/PyPlot.jl) for the plotting.
 
@@ -16,12 +13,7 @@ Pkg.add("IJulia")
 ```
 Installation can take a couple of minutes and will take about 3 GB of disk space.
 
-Make sure to use the package `Mustache` of version 0.3.1. You can verify the version of `Mustache` by running the command `Pkg.installed("Mustache")`.
-
-
-## For Windows users
-
-Windows 7/Windows Server 2012 users also require [TLS "Easy Fix"](https://support.microsoft.com/en-us/help/3140245/update-to-enable-tls-1-1-and-tls-1-2-as-a-default-secure-protocols-in) update.
+Make sure to use the package `Mustache` of version 0.3.2 or later. You can verify the version of `Mustache` by running the command `Pkg.installed("Mustache")`.
 
 ### Copying and pasting commands in a terminal
 
@@ -47,7 +39,7 @@ Pkg.add("Plots")
 * Clone `DIVAnd` into the v0.6 julia directory:
 ```bash
 cd .julia/v0.6/
-git clone git@github.com:gher-ulg/divand.jl.git
+git clone git@github.com:gher-ulg/DIVAnd.jl.git
 ```
 
 * Install Interpolations:
@@ -68,7 +60,7 @@ Pkg.add("PyPlot")
 * In the Julia terminal, issue the following command to test `DIVAnd`:
 
 ```julia
-Pkg.test("divand");
+Pkg.test("DIVAnd");
 ```
 All tests should succeed but it might need some time to execute completely. Be patient.
 
@@ -94,9 +86,11 @@ using IJulia
 notebook(dir="D:/myotherdirectory/onanotherdisk/")
 ```
 
+For issues with IJulia/Jupyter please have a look at https://github.com/JuliaLang/IJulia.jl.
+
 ### First steps with Jupyter and Julia
 
-If you modify `divand` module, restart the kernel to make sure latest version is
+If you modify `DIVAnd` module, restart the kernel to make sure latest version is
 used (remember, Julia does some compilations).
 
 ## Updating Julia
@@ -105,24 +99,8 @@ used (remember, Julia does some compilations).
 2. Run in Julia (NOT IJulia of Jupyter): `Pkg.build("IJulia")`
 3. Then (in IJulia or Julia) `Pkg.update()`
 
+More information is available at: https://github.com/JuliaLang/IJulia.jl#updating-julia-and-ijulia
+
 # Troubleshooting
 
-## Installing additional packages
-
-Depending on your current Julia setup, installing `DIVAnd` might ask for
-installation of additional packages. This will be explicitly shown,
-for example:
-
-```julia
-LoadError: ArgumentError: Module Roots not found in current path.
-Run `Pkg.add("Roots")` to install the Roots package.
-```
-
-## C runtime library when calling PyPlot
-
-`R6034 an application has made an attempt to load the C runtime library incorrectly` on Windows 10 with julia 0.6.1, matplotlib 2.1.0, PyPlot 2.3.2:
-
-```julia
-ENV["MPLBACKEND"]="qt4agg"
-```
-You can put this line in a file `.juliarc.jl` placed in your home directory (the output of `homedir()` in Julia).
+For any installation issue please have a look at the [troubleshooting section](https://gher-ulg.github.io/DIVAnd.jl/latest/#Troubleshooting-1) in the documentation.
