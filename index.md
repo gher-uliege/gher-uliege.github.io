@@ -14,5 +14,6 @@ check our [<i class="fa fa-github" aria-hidden="true"></i> page](https://github.
 
 <img src="./assets/img/academicroom.JPG" alt="Academic Room"/>
 
+[SDC VRE code sprint](./Meetings/SDC_VRE_Liege/index.md)          
 [Diva Workshops](./Diva-Workshops/index.md)     
 [Liege Colloquium](./Liege-Colloquium/index.md)
