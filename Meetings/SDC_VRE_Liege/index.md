@@ -13,7 +13,8 @@ Sart-Tilman Campus, University of Liège, Belgium.
 The campus is located
 * 7 km from the *Guillemins* train station
 * 9 km from the town center.
-The meeting room will be announced later.  
+
+The exact meeting room will be announced later.  
 
 [How to get there?](../../Diva-Workshops/howtogetthere.md)
 
