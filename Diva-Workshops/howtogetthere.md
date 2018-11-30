@@ -40,10 +40,16 @@ Parking in Liège is not always easy, so check with your hotel staff if they hav
 
 The campus is well communicated to the center by bus.      
 [<i class="fa fa-bus" aria-hidden="true"></i> line 48](https://www.infotec.be/fr-be/medeplacer/horaires/ligne.aspx?ligne=L48&titre=48%20Op%E9ra%20-%20Guillemins%20-%20Sart-Tilman%20Universit%E9%20-%20CHU) from Opéra (center) to Guillemins train station and then University campus         
-(<i class="fa fa-eur" aria-hidden="true"></i> 2.5 - <i class="fa fa-hourglass-half" aria-hidden="true"></i> 1h18)       
-[<i class="fa fa-bus" aria-hidden="true"></i> line 48](https://www.infotec.be/fr-be/medeplacer/horaires/ligne.aspx?ligne=L58&titre=58%20Guillemins-Standard-Universit%E9-CHU-Boncelles) from Guillemins train station to University campus           
-(<i class="fa fa-eur" aria-hidden="true"></i> 2.5 - <i class="fa fa-hourglass-half" aria-hidden="true"></i> from 30 to 45 minutes or more, depending on traffic).
+(<i class="fa fa-eur" aria-hidden="true"></i> 2.5 - <i class="fa fa-hourglass-half" aria-hidden="true"></i> 30 to 45 minutes or more, depending on traffic)       
+[<i class="fa fa-bus" aria-hidden="true"></i> line 58](https://www.infotec.be/fr-be/medeplacer/horaires/ligne.aspx?ligne=L58&titre=58%20Guillemins-Standard-Universit%E9-CHU-Boncelles) from Guillemins train station to University campus           
+(<i class="fa fa-eur" aria-hidden="true"></i> 2.5 - <i class="fa fa-hourglass-half" aria-hidden="true"></i> 20 to 30 minutes).
+
+The bus stop is called *Chimie* ([50°35'02.2"N, 5°33'59.0"E](https://goo.gl/maps/eeViGmDMvBS2)).
 
 ### By bike
 
 A bike lane has been set up so you can reach the campus from the center without having to be in the traffic. You can follow [this track](https://www.google.com/maps/dir/Op%C3%A9ra+Royal+de+Wallonie-Li%C3%A8ge,+Place+de+l'Op%C3%A9ra,+4000+Li%C3%A8ge/GeoHydrodynamics+and+Environment+Research,+All%C3%A9e+du+Six+Aout+19,+4000+Li%C3%A8ge/@50.6384896,5.5686529,15.25z/data=!4m15!4m14!1m5!1m1!1s0x47c0fa11cafa522b:0xf328eafe11ceb675!2m2!1d5.5706691!2d50.6434524!1m5!1m1!1s0x47c0f8295a4a9491:0xf989536c76131422!2m2!1d5.5661331!2d50.5825237!3e1!5i1).
+
+### Hiking / running
+
+<i class="fa fa-map-signs" aria-hidden="true"></i> In less than 1h30 you can get to the campus from the train station. Most of the track consists of forest paths, so better use a GPS device or application if you don't want to get lost: [GPX track](https://www.wikiloc.com/hiking-trails/guillemins-sart-tilman-26966703).

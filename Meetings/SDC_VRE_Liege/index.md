@@ -34,15 +34,15 @@ You need to fill and send [this form](https://www.campus.uliege.be/cms/c_9110790
 
 ## Preliminary program
 
-### Monday
+### Monday (1 PM - 6 PM)
 * Welcome by the organisers
 * Working on the VRE
 * Social Dinner
 
-### Tuesday
+### Tuesday (9 AM - 6 PM)
 * Working more on the VRE
 
-### Wednesday
+### Wednesday (9 AM - 6 PM)
 * Working even more on the VRE
 * Conclusions, future milestones
 
