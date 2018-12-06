@@ -15,7 +15,9 @@ The campus is located
 * 9 km from the town center.
 
 The meeting room is located in the [Aquapôle (building B53)](https://www.campus.uliege.be/cms/c_1841773/fr/b53-aquapole).       
-The closest bus stop is called *Polytech*.
+The closest bus stop is called *Polytech*.       
+After crossing the main road, continue straight for about 200 meters.      
+The building will be located on your left.
 
 ![Aquapôle building](../../assets/img/b53_aquapole3.jpg)
 
