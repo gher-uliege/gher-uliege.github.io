@@ -14,9 +14,12 @@ The campus is located
 * 7 km from the *Guillemins* train station
 * 9 km from the town center.
 
-The exact meeting room will be announced later.  
+The meeting room is located in the [Aquapôle (building B53)](https://www.campus.uliege.be/cms/c_1841773/fr/b53-aquapole).       
+The closest bus stop is called *Polytech*.
 
-[How to get there?](../../Diva-Workshops/howtogetthere.md)
+![Aquapôle building](../../assets/img/b53_aquapole3.jpg)
+
+[How to get to the Sart Tilman campus?](../../Diva-Workshops/howtogetthere.md)
 
 ## <i class="fa fa-calendar-check-o" aria-hidden="true"></i> - When?
 
