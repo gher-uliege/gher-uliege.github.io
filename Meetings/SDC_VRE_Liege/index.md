@@ -21,7 +21,9 @@ The building will be located on your left.
 
 ![Aquapôle building](../../assets/img/b53_aquapole3.jpg)
 
-[How to get to the Sart Tilman campus?](../../Diva-Workshops/howtogetthere.md)
+[How to get to the Sart Tilman campus?](../../Diva-Workshops/howtogetthere.md)      
+[How to find the Aquapôle building?](./aquapole.md)
+
 
 ## <i class="fa fa-calendar-check-o" aria-hidden="true"></i> - When?
 

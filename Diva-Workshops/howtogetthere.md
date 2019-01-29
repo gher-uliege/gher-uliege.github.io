@@ -44,6 +44,8 @@ The campus is well communicated to the center by bus.
 [<i class="fa fa-bus" aria-hidden="true"></i> line 58](https://www.infotec.be/fr-be/medeplacer/horaires/ligne.aspx?ligne=L58&titre=58%20Guillemins-Standard-Universit%E9-CHU-Boncelles) from Guillemins train station to University campus           
 (<i class="fa fa-eur" aria-hidden="true"></i> 2.5 - <i class="fa fa-hourglass-half" aria-hidden="true"></i> 20 to 30 minutes).
 
+You can also purchase a card for 8 trips (9€10) at the *TEC* office, located inside the train station.
+
 ### By bike
 
 A bike lane has been set up so you can reach the campus from the center without having to be in the traffic. You can follow [this track](https://www.google.com/maps/dir/Op%C3%A9ra+Royal+de+Wallonie-Li%C3%A8ge,+Place+de+l'Op%C3%A9ra,+4000+Li%C3%A8ge/GeoHydrodynamics+and+Environment+Research,+All%C3%A9e+du+Six+Aout+19,+4000+Li%C3%A8ge/@50.6384896,5.5686529,15.25z/data=!4m15!4m14!1m5!1m1!1s0x47c0fa11cafa522b:0xf328eafe11ceb675!2m2!1d5.5706691!2d50.6434524!1m5!1m1!1s0x47c0f8295a4a9491:0xf989536c76131422!2m2!1d5.5661331!2d50.5825237!3e1!5i1).
