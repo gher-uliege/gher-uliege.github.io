@@ -44,7 +44,9 @@ The campus is well communicated to the center by bus.
 [<i class="fa fa-bus" aria-hidden="true"></i> line 58](https://www.infotec.be/fr-be/medeplacer/horaires/ligne.aspx?ligne=L58&titre=58%20Guillemins-Standard-Universit%E9-CHU-Boncelles) from Guillemins train station to University campus           
 (<i class="fa fa-eur" aria-hidden="true"></i> 2.5 - <i class="fa fa-hourglass-half" aria-hidden="true"></i> 20 to 30 minutes).
 
-You can also purchase a card for 8 trips (9€10) at the *TEC* office, located inside the train station.
+You can also purchase a card for 8 trips (9€10) at one of the *TEC* office, located
+* Place Saint Lambert or
+* inside the Guillemins train station.
 
 ### By bike
 
