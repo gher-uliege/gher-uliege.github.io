@@ -58,3 +58,9 @@ You need to fill and send [this form](https://www.campus.uliege.be/cms/c_9110790
 <i class="fa fa-plug" aria-hidden="true"></i> Bring power adapters if needed (<https://www.power-plugs-sockets.com/belgium/>).
 
 <i class="fa fa-wifi" aria-hidden="true"></i> If your institution is part of [eduroam](https://www.eduroam.org/), be sure to have your credentials for the wifi connexion.
+
+## <i class="fa fa-camera" aria-hidden="true"></i> - Pictures
+
+[Photo album](https://photos.app.goo.gl/g7XaQ1ZiesNWd8gU8)
+
+![Group picture](../../assets/img/VREgroup.JPG)
