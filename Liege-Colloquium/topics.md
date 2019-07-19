@@ -1,3 +1,5 @@
+| 2020 | Towards understanding and assessing human impacts on coastal marine environments |
+| 2019 | Polar Ocean facing changes |
 | 2018 | Long-term studies in oceanography – a celebration of 50 years of science at the Liege Colloquium  |
 | 2017 | Marine Turbulence Re³-Visited |
 | 2016 | Submesoscale Processes: Mechanisms, Implications and new Frontiers |
