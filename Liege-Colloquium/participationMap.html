@@ -5,8 +5,8 @@
 
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Participation to the Liège Colloquium on Ocean Dynamics (1969 - 2018)</title>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.3/leaflet.js"></script>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.3/leaflet.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.fullscreen/1.4.3/Control.FullScreen.min.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.6/MarkerCluster.css">
@@ -28,9 +28,9 @@
 		<script tupe="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.6/leaflet.markercluster.js"></script>
 		<script src="https://d3js.org/d3.v4.min.js" charset="utf-8"></script>
 		<script src="https://d3js.org/d3-hexbin.v0.2.min.js"></script>
-		<script src="https://rawgit.com/Asymmetrik/leaflet-d3/master/dist/leaflet-d3.js" charset="utf-8"></script>
 		<script type="text/javascript" src="../js/basemaps.js"></script>
 		<script type="text/javascript" src="../js/Leaflet.Geodesic.js"></script>
+		<script type="text/javascript" src="../js/leaflet-d3.min.js" charset="utf-8"></script>
 		<script type="text/javascript" src="data/Participants.coords"></script>
 		<script type="text/javascript" src="data/FrqParticipants.coords"></script>
 		<script type="text/javascript" src="data/DistParticipants.coords"></script>
@@ -257,7 +257,7 @@
 					"Longest trips": circmarkersDist
 				};
 
-			L.control.layers(baseMaps, overlayers, {autoZIndex:true, collapsed:false}).addTo(map);
+			L.control.layers(baseMaps, overlayers, {autoZIndex:true, collapsed:true}).addTo(map);
 
 
 
