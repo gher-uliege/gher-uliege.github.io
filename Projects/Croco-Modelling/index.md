@@ -15,5 +15,89 @@
 |---|---|---|---|---|
 | [<i class="fas fa-link"></i> croco-tools-v1.0](ftp://ftp.ifremer.fr/ifremer/croco/CODE_ARCHIVE/croco_tools-v1.0.tar.gz)   | MATLAB   |   |   |   |
 |[tools.tar ](http://people.atmos.ucla.edu/alex/ROMS/tools.tar)   | Fortran  | 23 March 2018   |S. Shchepetkin   |[ROMS forum *Set a land mask on the sea in SeaGrid*](https://www.myroms.org/forum/viewtopic.php?f=14&t=4775)   |
-|[<i class="fab fa-bitbucket"></i> easygrid_python.py](https://bitbucket.org/emason/easygrid-python/src/default/)   | Python   | 10 November 2016   | E. Mason   |   |
+|[<i class="fab fa-bitbucket"></i> easygrid_python.py](https://bitbucket.org/emason/easygrid-python/src/default/)   | Python 2.7  | 10 November 2016   | E. Mason   |   |
 |[<i class="fab fa-github"></i> pyroms2roms](https://github.com/evanmason/pyroms2roms) | Python | 11 January 2018 | E. Mason | |
+
+
+### Notes for easygrid
+
+Works with Python2.7 → virtualenv
+```bash
+mkvirtualenv -p /usr/bin/python2.7 ROMS-python2.7
+```
+
+Install packages:
+```bash
+pip install numpy
+pip install matplotlib
+pip install netCDF4
+pip install traits
+pip install pathlib2
+pip install wxPython
+```
+
+<i class="fas fa-hourglass-start"></i> Installing wxPython can take a while
+
+## CROCO on NIC4
+
+### Install compiler and libraries
+```bash
+module add intel/compiler/64/14.0/2013_sp1.1.106
+module add hdf5/1.8.13/openmpi-1.7.5-intel2013_sp1.1.106
+module add netcdf/4.3.2/openmpi-1.7.5-intel2013_sp1.1.106
+```
+
+### Compile
+#### Basic
+```bash
+cd /home/ulg/gher/ctroupin/CROCO/croco-v1.0/OCEAN/Compile
+./jobcomp
+```
+If everything goes well, you should end up with a new executable `croco`
+```bash
+ctroupin@nic4.master2 ~/CROCO/croco-v1.0/OCEAN/Compile $ ls -lah croco
+-rwxrwxr-x 1 ctroupin ctroupin 697K Aug 27 15:30 croco
+```
+#### Optimised
+There are a lot of compilation flags that can improve the code performance...
+
+* According to the [CECI doc](https://support.ceci-hpc.be/doc/_contents/UsingSoftwareAndLibraries/CompilingSoftwareFromSources/index.html#with-the-intel-compiler):
+> you could specify -axSSE4.2,AVX to build a binary optimized for all the CÉCI computers.
+
+
+### Running with MPI
+
+#### Wizard
+
+Using http://www.ceci-hpc.be/scriptgen.html, we get a good starting point:
+
+```bash
+#!/bin/bash
+# Submission script for Vega
+#SBATCH --job-name=Croco-Basic
+#SBATCH --time=02:00:00 # hh:mm:ss
+#
+#SBATCH --ntasks=2
+#SBATCH --mem-per-cpu=1000 # megabytes
+#SBATCH --partition=defq
+#
+# Uncomment the following line if your work
+# is floating point intensive and CPU-bound.
+### SBATCH --threads-per-core=1
+#
+#SBATCH --mail-user=ctroupin@uliege.be
+#SBATCH --mail-type=ALL
+#
+#SBATCH --comment=CROCO-Modelling
+```
+
+**Note:**
+```
+###   WARNING: with this version of OpenMPI it is                 ###
+###                                                               ###
+###   MANDATORY to add the '--bind-to none' option to 'mpirun'    ###
+###                                                               ###
+###   even if your job seems working properly without it          ###
+###                                                               ###
+###   $ mpirun  --bind-to none  ./my_mpi_program ...  
+```
