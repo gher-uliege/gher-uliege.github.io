@@ -36,16 +36,16 @@
 	});
 
 	var Esri_WorldImagery = L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
-		{
-			attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, ' +
-			'AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
-		}
-	);
+	{
+		attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, ' +
+		'AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
+	}
+);
 
-	var OpenStreetMap_Mapnik = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-		maxZoom: 19,
-		attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-	});
+var OpenStreetMap_Mapnik = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+	maxZoom: 19,
+	attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+});
 
 
 // Add EMODnet Bathymetry layers
@@ -87,13 +87,17 @@ var coastlinesLayer = L.tileLayer.wms("http://ows.emodnet-bathymetry.eu/wms", {
 	opacity: 0.8
 });
 
+var marinetraffic = L.tileLayer.wms('https://ows.emodnet-humanactivities.eu/wms', {
+	layers: 'emodnet:2017_09_st_All'
+}).addTo(map);
+
 var bathymetryGroupLayer = L.layerGroup([bathymetryLayer, coastlinesLayer, namesLayer, underseaLayer]);
 bathymetryGroupLayer.addTo(map);
 
 var baseMaps = {
 	"Positron": positron,
 	"Ocean Basemap (ESRI)": Esri_OceanBasemap,
-	"OpenStretMap": OpenStreetMap_Mapnik,
+	"OpenStreetMap": OpenStreetMap_Mapnik,
 	"Esri_WorldImagery": Esri_WorldImagery
 };
 
@@ -130,6 +134,21 @@ L.marker([42.583005, 8.724513], {icon: lighthouseIcon}).bindPopup('Phare de la R
 L.marker([42.578714, 8.719076], {icon: weatherIcon}).bindPopup('Station météo').addTo(map);
 
 
+var stations = {"C3D05": [8.74404, 42.6031, 230],
+	"C3D04": [8.74718, 42.5989, 189],
+	"C3D02": [8.75431, 42.5899, 100],
+	"C3D01": [8.73505, 42.587, 79],
+	"C3D03": [8.77514, 42.5971, 72]
+};
+
+for (var key in stations) {
+	console.log(key);
+	console.log(stations[key]);
+	var circ = L.marker([stations[key][1], stations[key][0]]).addTo(map);
+	circ.bindTooltip(key, {permanent: true, className: "textlabel"});
+	circ.addTo(map);
+};
+
 // CTD positions
 var nCTD1 = CTDlist.length;
 CTD1 = []
@@ -138,20 +157,18 @@ for (var i = 0; i < nCTD1; i++) {
 	CT1circle = L.circleMarker(CTDlist[i][0], {radius: 3}).bindPopup(CTDlist[i][1]).addTo(map);
 	CTD1.push(CT1circle);
 	CTD1layer.addLayer(CT1circle);
-}
-CTD1layer.addTo(map);
-
+};
 
 
 var imageUrl = './images/A2017127121500_L2_LAC_SST.png',
 imageBounds = [[38., 3.], [44., 11.]];
-SST = L.imageOverlay(imageUrl, imageBounds, {opacity: 1., zIndex: 1});
+//SST = L.imageOverlay(imageUrl, imageBounds, {opacity: 1., zIndex: 1});
 //SST.bringToFront()
 
 
 var overlayers = {
-	"SST": SST,
 	"EMODnet Bathymetry": bathymetryGroupLayer,
+	"Marine Traffic": marinetraffic
 };
 
 L.control.layers(baseMaps, overlayers, {collapsed:false}).addTo(map);
