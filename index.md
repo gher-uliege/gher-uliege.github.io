@@ -10,6 +10,8 @@
 We develop software tools for ocean sciences (data analaysis, numerical modelling),     
 check our [<i class="fa fa-github" aria-hidden="true"></i> page](https://github.com/gher-ulg/) to discover them.
 
+[Julia for Oceanography](julia_ocean.md): list of modules useful for oceanography.
+
 ## Meetings and conferences
 
 <img src="./assets/img/academicroom.JPG" alt="Academic Room"/>
