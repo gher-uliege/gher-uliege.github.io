@@ -24,8 +24,8 @@ Available in Julia standard library:
 
 
 ### Spatial interpolation
-[DIVAnd.jl](https://github.com/gher-ulg/DIVAnd.jl): n-dimensional variational analysis of arbitrarily located observations in complex geometries.
-[GeoStats.jl](https://github.com/juliohm/GeoStats.jl): extensible framework for high-performance geostatistics.     
+[DIVAnd.jl](https://github.com/gher-ulg/DIVAnd.jl): n-dimensional variational analysis of arbitrarily located observations in complex geometries. 
+[GeoStats.jl](https://github.com/juliohm/GeoStats.jl): extensible framework for high-performance geostatistics.      
 [Interpolations.jl](https://github.com/JuliaMath/Interpolations.jl): fast, continuous interpolation of discrete datasets provided on a (irregular) grid.          
 [GridInterpolations.jl](https://github.com/sisl/GridInterpolations.jl): multidimensional grid interpolation in arbitrary dimensions.     
 
