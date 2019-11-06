@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>
+		IMPACT domain map
+	</title>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.heat/0.2.0/leaflet-heat.js"></script>
+	<script src="./js/basemaps.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css"/>
+	<style type="text/css">
+	#map { height : 900px; width : 1800px}
+</style>
+</head>
+<body>
+
+	<div id="map"></div>
+	<script type="text/javascript" src="data/coords.json"></script>
+	<script type="text/javascript" src="data/drifters.json"></script>
+	<script>
+
+	var map = L.map('map')
+
+	map.setView([43., 9.5], 10);
+	map.addLayer(OpenStreetMap_Mapnik);
+
+	var baseMaps = {
+		"CartoDB": CartoDB,
+		"OpenStreetMap": OpenStreetMap_Mapnik,
+		"ESRI Ocean Basemap": Esri_OceanBasemap
+	};
+
+	var bathymetry = L.tileLayer.wms('https://ows.emodnet-bathymetry.eu/wms', {
+		layers: 'emodnet:mean_atlas_land,coastlines,world:sea_names'
+	});
+
+	var heatStyle = {
+		gradient : {.65: "white", .75:"#FFFF36", .85:"#FF9D00", .9:"#FF1700", .95:"#900000", 1:"black"},
+		minOpacity: 0.75,
+		radius: 4,
+		blur: 4,
+	};
+
+	var heatmap = L.heatLayer(coords, heatStyle);
+
+	var myStyle = {
+		"color": "#ff7800",
+		"weight": 2,
+		"opacity": 0.65
+	};
+
+	var mystyle2 = function(feature) {
+    switch (feature.properties.name) {
+        case '0-3149059': return {color: "#ff0000", "weight": 2};
+				case "0-3148596": return {color: "#b15928", "weight": 2};
+				case "0-3149226": return {color: "#ffff99", "weight": 2};
+				case "0-3149229": return {color: "#6a3d9a", "weight": 2};
+				case "0-3148178": return {color: "#cab2d6", "weight": 2};
+				case "0-3148182": return {color: "#ff7f00", "weight": 2};
+				case "0-3148176": return {color: "#fdbf6f", "weight": 2};
+				case "0-3148216": return {color: "#e31a1c", "weight": 2};
+				case "0-3148145": return {color: "#fb9a99", "weight": 2};
+				case "0-3148109": return {color: "#b2df8a", "weight": 2};
+				case "0-3148168": return {color: "#1f78b4", "weight": 2};
+				case "0-3148173": return {color: "#a6cee3", "weight": 2};
+    }
+  };
+
+	L.geoJSON(myLines, {
+		style: mystyle2
+	}).addTo(map);
+
+	L.control.scale().addTo(map);
+
+	var overlayers = {
+		"EMODnet bathymetry": bathymetry,
+		"Drifter heat map": heatmap,
+	};
+
+	L.control.layers(baseMaps, overlayers,
+		{autoZIndex:true, collapsed:false}).addTo(map);
+
+		</script>
+	</body>
+	</html>
