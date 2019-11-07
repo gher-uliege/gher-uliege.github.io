@@ -21,12 +21,13 @@
 	<div id="map"></div>
 	<script type="text/javascript" src="data/coords.json"></script>
 	<script type="text/javascript" src="data/drifters.json"></script>
+	<script type="text/javascript" src="data/CapCorse.geojson"></script>
 	<script>
 
 	var map = L.map('map')
 
-	map.setView([43., 9.5], 10);
-	map.addLayer(OpenStreetMap_Mapnik);
+	map.setView([43., 9.5], 9);
+	map.addLayer(Esri_OceanBasemap);
 
 	var baseMaps = {
 		"CartoDB": CartoDB,
@@ -96,6 +97,9 @@
 	}
 	var moorings = L.layerGroup(moor);
 
+	// Marine protected area
+	var PNM = L.geoJSON(MPAcorse).addTo(map);
+
 	L.control.scale().addTo(map);
 
 	var overlayers = {
@@ -104,6 +108,7 @@
 		"Drifter heat map": heatmap,
 		"Release areas": circles,
 		"Moorings": moorings,
+		"Marine natural parc": PNM
 	};
 
 	L.control.layers(baseMaps, overlayers,
