@@ -79,7 +79,7 @@
 
   var circareas = []
 	for (const [name, coords] of Object.entries(areas)) {
-	  var c = L.circle(coords, {radius: 2000, color:"red"});
+	  var c = L.circle(coords, {radius: 2000, color:"red"}).addTo(map);
 		circareas.push(c);
 	}
 	var circles = L.layerGroup(circareas);
