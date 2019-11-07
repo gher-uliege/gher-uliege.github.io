@@ -47,38 +47,63 @@
 
 	var heatmap = L.heatLayer(coords, heatStyle);
 
-	var myStyle = {
-		"color": "#ff7800",
-		"weight": 2,
-		"opacity": 0.65
+	var linestyle = function(feature) {
+		switch (feature.properties.name) {
+			case '0-3149059': return {color: "#ff0000", "weight": 2};
+			case "0-3148596": return {color: "#b15928", "weight": 2};
+			case "0-3149226": return {color: "#ffff99", "weight": 2};
+			case "0-3149229": return {color: "#6a3d9a", "weight": 2};
+			case "0-3148178": return {color: "#cab2d6", "weight": 2};
+			case "0-3148182": return {color: "#ff7f00", "weight": 2};
+			case "0-3148176": return {color: "#fdbf6f", "weight": 2};
+			case "0-3148216": return {color: "#e31a1c", "weight": 2};
+			case "0-3148145": return {color: "#fb9a99", "weight": 2};
+			case "0-3148109": return {color: "#b2df8a", "weight": 2};
+			case "0-3148168": return {color: "#1f78b4", "weight": 2};
+			case "0-3148173": return {color: "#a6cee3", "weight": 2};
+		}
 	};
 
-	var mystyle2 = function(feature) {
-    switch (feature.properties.name) {
-        case '0-3149059': return {color: "#ff0000", "weight": 2};
-				case "0-3148596": return {color: "#b15928", "weight": 2};
-				case "0-3149226": return {color: "#ffff99", "weight": 2};
-				case "0-3149229": return {color: "#6a3d9a", "weight": 2};
-				case "0-3148178": return {color: "#cab2d6", "weight": 2};
-				case "0-3148182": return {color: "#ff7f00", "weight": 2};
-				case "0-3148176": return {color: "#fdbf6f", "weight": 2};
-				case "0-3148216": return {color: "#e31a1c", "weight": 2};
-				case "0-3148145": return {color: "#fb9a99", "weight": 2};
-				case "0-3148109": return {color: "#b2df8a", "weight": 2};
-				case "0-3148168": return {color: "#1f78b4", "weight": 2};
-				case "0-3148173": return {color: "#a6cee3", "weight": 2};
-    }
-  };
-
-	L.geoJSON(myLines, {
-		style: mystyle2
+	var driftersall = L.geoJSON(myLines, {
+		style: linestyle
 	}).addTo(map);
+
+
+	// Add release areas
+	var areas = {
+		"Île Rousse": [42.640401, 8.939017],
+		"Saint-Florent": [42.679787, 9.298567],
+		"Bastia": [42.696164, 9.455647]
+	};
+
+  var circareas = []
+	for (const [name, coords] of Object.entries(areas)) {
+	  var c = L.circle(coords, {radius: 2000, color:"red"});
+		circareas.push(c);
+	}
+	var circles = L.layerGroup(circareas);
+
+	// Add mooring positions
+	var mooringpos = {
+		"6100001": [43.4, 7.8303],
+		"6100295": [42.2617, 9.6433],
+	}
+
+	var moor = []
+	for (const [name, coords] of Object.entries(mooringpos)) {
+		var m = L.marker(coords).addTo(map);
+		moor.push(m);
+	}
+	var moorings = L.layerGroup(moor);
 
 	L.control.scale().addTo(map);
 
 	var overlayers = {
+		"Drifter trajectories": driftersall,
 		"EMODnet bathymetry": bathymetry,
 		"Drifter heat map": heatmap,
+		"Release areas": circles,
+		"Moorings": moorings,
 	};
 
 	L.control.layers(baseMaps, overlayers,

@@ -34,9 +34,51 @@ pip install netCDF4
 pip install traits
 pip install pathlib2
 pip install wxPython
+pip install scipy
+pip install traitsui
+pip install arrow==0.12.0
+```
+<i class="fas fa-hourglass-start"></i> Installing wxPython can take a while
+
+#### Installing Basemap
+
+* There is no `pip install ...` possibility
+* `Cartopy` should take over Basemap...
+
+1. Get sources from https://github.com/matplotlib/basemap/releases/
+2. Install the following packages:
+```bash
+pip install pyproj
+pip install pyproj==1.9.6
+pip install pyshp
+```
+3. Run the installation script
+```bash
+python setup.py install
 ```
 
-<i class="fas fa-hourglass-start"></i> Installing wxPython can take a while
+#### Installing Qt4 (not sure if needed, but keep it for now)
+
+#### install SIP
+
+https://www.riverbankcomputing.com/software/sip/download
+sip-4.19.18.tar.gz
+```bash
+python configure.py
+make
+sudo make install
+```
+
+#### install pyqt
+
+https://riverbankcomputing.com/software/pyqt/download
+PyQt4_gpl_x11-4.12.3.tar.gz
+
+```bash
+python configure-ng.py
+make
+make install
+```
 
 ## CROCO on NIC4
 
