@@ -1,6 +1,6 @@
 # Installation
 
-* You will need to install [Julia](https://julialang.org/downloads/). We will use the latest version, i.e. version **0.6** as of January 2018. Older versions are not supported.
+* You will need to install [Julia](https://julialang.org/downloads/). We will use the latest version, i.e. version **1.2** as of November 2019. Versions earlier than julia 1.0 will not work.
 
 * You will need to install also `DIVAnd` following [these instructions](https://github.com/gher-ulg/DIVAnd.jl/#installing).
 
@@ -8,51 +8,18 @@
 
 These two packages can be installed using the following commands.
 ```julia
+using Pkg
 Pkg.add("PyPlot")
 Pkg.add("IJulia")
 ```
 Installation can take a couple of minutes and will take about 3 GB of disk space.
-
-Make sure to use the package `Mustache` of version 0.3.2 or later. You can verify the version of `Mustache` by running the command `Pkg.installed("Mustache")`.
 
 ### Copying and pasting commands in a terminal
 
 Windows user should have a look at this to [enable the quick edit mode](https://blogs.msdn.microsoft.com/adioltean/2004/12/27/useful-copypaste-trick-in-cmd-exe/) to facilitate copying and pasting commands.
 
 
-<!---
 
-A possibility for the installation is to use Anaconda:
-
-* Install anaconda: [https://conda.io/docs/user-guide/install/index.html](https://conda.io/docs/user-guide/install/index.html)
-
-* Install IJulia:
-```julia
-Pkg.add("IJulia")
-```
-
-* Install Plots:
-```julia
-Pkg.add("Plots")
-```
-
-* Clone `DIVAnd` into the v0.6 julia directory:
-```bash
-cd .julia/v0.6/
-git clone git@github.com:gher-ulg/DIVAnd.jl.git
-```
-
-* Install Interpolations:
-```julia
-Pkg.add ("Interpolations")
-```
-Note: remove this command if we add a *required* into `DIVAnd` module.
-
-* Install PyPlot:
-```julia
-Pkg.add("PyPlot")
-```
--->
 
 
 # Testing your installation
@@ -60,6 +27,7 @@ Pkg.add("PyPlot")
 * In the Julia terminal, issue the following command to test `DIVAnd`:
 
 ```julia
+using Pkg
 Pkg.test("DIVAnd");
 ```
 All tests should succeed but it might need some time to execute completely. Be patient.
