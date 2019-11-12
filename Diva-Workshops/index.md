@@ -6,5 +6,6 @@
 Since 2006, we organize workshops for the DIVA users, principally members of the region groups responsible for the climatology production in [SeaDataNet](https://www.seadatanet.org/). During these workshops, several experts are present to help newcomers and the latest developments are presented for advanced users. Generally, a wish-list from users is established at the end of the workshop and most of the changes
 are implemented during the following weeks or months.
 
-[Next workshop (2020):](./2020/index.md)
+[ℹ️ Next workshop (2020)](./2020/index.md)       
 [Previous workshops](./Previous-workshops.md): information about the previous workshops (including presentations).
+gi

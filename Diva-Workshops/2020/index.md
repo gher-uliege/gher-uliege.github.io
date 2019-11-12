@@ -3,16 +3,20 @@
   <link rel="stylesheet" href="../assets/css/academicons.css">
 </head>
 
-Since 2006, we organize workshops for the DIVA users, principally members of the region groups responsible for the climatology production in [SeaDataNet](https://www.seadatanet.org/). During these workshops, several experts are present to help newcomers and the latest developments are presented for advanced users. Generally, a wish-list from users is established at the end of the workshop and most of the changes
-are implemented during the following weeks or months.
-
-[Previous workshops](../Previous-workshops.md): information about the previous workshops (including presentations).
-
-# Diva Workshop -- 2020
+# Diva Workshop -- 27-30 January 2020
 
 This page provides the relevant information about the Diva user workshops organised in the frame of H2020 [SeaDataCloud](https://www.seadatanet.org/) project. [`Diva`](https://github.com/gher-ulg/DIVA) and [`DIVAnd`](https://github.com/gher-ulg/divand.jl) are software tools implementing advanced techniques to generate gridded fields from in situ observations.
 
 ## General information
+
+### Dates
+
+<i class="fa fa-calendar-check-o" aria-hidden="true"></i> From Monday 27 January (1.30 PM) to Thursday 30 January (3 PM), 2020.
+
+### Venue
+
+📍 The 2020 edition will be hosted by the University of Bologna, Department of Physics and Astronomy, Viale Berti Pichat 6/2, 40127 Bologna, 2nd floor Classroom "Biomedica".
+
 
 ### Participants
 
@@ -22,30 +26,20 @@ Priority will be given to those partners responsible for the Product preparation
 
 ### Registration
 
-The registration is done by email: contact Evi (paraskevi.tsitsopoulou@cmcc.it) with Cc to Nadia (nadia.pinardi@unibo.it).        
+📧 The registration is done by email: contact Evi (paraskevi.tsitsopoulou@cmcc.it) with Cc to Nadia (nadia.pinardi@unibo.it).        
 **Deadline:** 15th of December, 2020.
-
-### Dates
-
-<i class="fa fa-calendar-check-o" aria-hidden="true"></i> From Monday 27 January (1.30 PM) to Thursday 30 January (3 PM), 2020.
-
-### Venue
-
-The 2020 edition will be hosted by the University of Bologna, Department of Physics and Astronomy, Viale Berti Pichat 6/2, 40127 Bologna, 2nd floor Classroom "Biomedica".
-
 
 ### Accommodations
 
 <i class="fa fa-bed" aria-hidden="true"></i> Bologna is a very busy town and we recommend you book at the Hotel before the end of 2019.
 
-
 ## Preliminary program
 
-The workshop will be focused on `DIVAnd` (n-dimensional interpolation), unlike the previous editions, which were dedicated to the 2D version (DIVA).
+The workshop will be focused on `DIVAnd` (n-dimensional interpolation).
 
 ### Monday (1/2 day)
 
-Checking of installations
+Checking of installations      
 Theory: introduction to variational analysis     
 Objective Analysis, Optimal Interpolation, and Variational Objective Analysis  
 
@@ -53,9 +47,9 @@ Objective Analysis, Optimal Interpolation, and Variational Objective Analysis
 
 Ocean reanalysis       
 Data products consistency analysis       
-New data products: how to better use DIVAnd (sliding decades)       
+New data products: how to better use `DIVAnd` (sliding decades)       
 Ocean Monitoring Indicators, coastal high resolution maps             
-Introduction to jupyter-notebook and basic Julia commands and major differences with MATLAB and Python
+Introduction to jupyter-notebook and basic Julia commands and major differences with `MATLAB` and `Python`
 Data reading       
 Preparation of topography      
 How to define the background field       
@@ -69,11 +63,13 @@ Add advection constraint (afternoon)
 ### Thursday
 
 Wrap-up with future development ideas:
-* From data integration to DIVAnd: how to harmonize the workflow
+* From data integration to `DIVAnd`: how to harmonize the workflow
 * Use of residuals to discard non-representative data in the climatology
-* Consistency analysis of DIVAnd output with reference products
+* Consistency analysis of `DIVAnd` output with reference products
 
 ## Preparation
+
+### Computers
 
 Participants will have with them a laptop with:     
 * 16 GB RAM memory and     
@@ -84,7 +80,7 @@ More resources might be necessary depending on the resolution and size of the st
 
 You may also need to check the list of [acronyms and definitions](../acronyms.md).
 
-## Workshop material
+### Workshop material
 
 The notebooks are availabe in the folder `notebooks` in the [zip file](https://github.com/gher-ulg/Diva-Workshops/archive/master.zip).
 Follow the instructions [here](https://github.com/gher-ulg/Diva-Workshops/tree/master/notebooks#how-to-download-ipynb-files-from-github) to download and open the notebook files.
@@ -92,9 +88,8 @@ Follow the instructions [here](https://github.com/gher-ulg/Diva-Workshops/tree/m
 ### Installation
 
 * [Julia](https://julialang.org/downloads/) language
-* [IJulia](https://github.com/JuliaLang/IJulia.jl), the Julia kernel for Jupyter.
+* [IJulia](https://github.com/JuliaLang/IJulia.jl), the `Julia` kernel for Jupyter.
 * [OceanDataView](https://odv.awi.de/), to pre-process the data files.
-* [Nco](http://nco.sourceforge.net/), a set of netCDF operators for regridding, editing etc.
 
 More details about the procedure: [installation](../installation.md).
 
