@@ -13,7 +13,8 @@
 
 ### Venue
 
-📍 The 2020 edition will be hosted by the University of Bologna, Department of Physics and Astronomy, Viale Berti Pichat 6/2, 40127 Bologna, 2nd floor Classroom "Biomedica".
+📍 The 2020 edition will be hosted by the University of Bologna, Department of Physics and Astronomy, Viale Berti Pichat 6/2, 40127 Bologna, 2nd floor Classroom "Biomedica".         
+[🔗 How to reach us?](../assets/pdf/How-to-reach-us.pdf)
 
 ### Participants
 
@@ -38,7 +39,7 @@ The workshop will be focused on `DIVAnd` (n-dimensional interpolation).
 ### Monday (1/2 day)
 
 📍 Meeting point: Department of Physics and Astronomy, Viale Berti Pichat 6/2, Bologna at 1:00 PM.      
-Lectures start at 1.30 PM
+🕒 Meeting start: 1.30 PM
 
 Checking of installations      
 Theory: introduction to variational analysis     
@@ -72,7 +73,7 @@ Wrap-up with future development ideas:
 
 Afternoon (finish at 3PM), parallel session:     
 SeaDataCloud Product Meeting      
-*Meeting closure:* 3 PM.
+🕒 *Meeting closure:* 3 PM.
 
 ## Preparation
 
