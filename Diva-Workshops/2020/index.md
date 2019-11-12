@@ -28,13 +28,17 @@ Priority will be given to those partners responsible for the Product preparation
 
 ### Accommodations
 
-<i class="fa fa-bed" aria-hidden="true"></i> Bologna is a very busy town and we recommend you book at the Hotel before the end of 2019.
+<i class="fa fa-bed" aria-hidden="true"></i> Bologna is a very busy town and we recommend you book at the jotel before the end of 2019.      
+[🔗 List of hotels](../assets/pdf/HOTELS-IN-BOLOGNA.pdf).
 
 ## Preliminary program
 
 The workshop will be focused on `DIVAnd` (n-dimensional interpolation).
 
 ### Monday (1/2 day)
+
+📍 Meeting point: Department of Physics and Astronomy, Viale Berti Pichat 6/2, Bologna at 1:00 PM.      
+Lectures start at 1.30 PM
 
 Checking of installations      
 Theory: introduction to variational analysis     
@@ -46,11 +50,13 @@ Ocean reanalysis
 Data products consistency analysis       
 New data products: how to better use `DIVAnd` (sliding decades)       
 Ocean Monitoring Indicators, coastal high resolution maps             
-Introduction to jupyter-notebook and basic Julia commands and major differences with `MATLAB` and `Python`
+Introduction to jupyter-notebook and basic `Julia` commands and major differences with `MATLAB` and `Python`
 Data reading       
 Preparation of topography      
 How to define the background field       
-Parameter optimization: horizontal and vertical correlation lengths, noise-to-signal ratio      
+Parameter optimization: horizontal and vertical correlation lengths, noise-to-signal ratio
+
+🍽️ Social dinner      
 
 ### Wednesday
 
@@ -63,6 +69,10 @@ Wrap-up with future development ideas:
 * From data integration to `DIVAnd`: how to harmonize the workflow
 * Use of residuals to discard non-representative data in the climatology
 * Consistency analysis of `DIVAnd` output with reference products
+
+Afternoon (finish at 3PM), parallel session:     
+SeaDataCloud Product Meeting      
+*Meeting closure:* 3 PM.
 
 ## Preparation
 
@@ -92,6 +102,6 @@ More details about the procedure: [installation](../installation.md).
 
 ### Before the workshop...
 
-<i class="fa fa-database" aria-hidden="true"></i> If you plan to use your own dataset, please verify that it has been quality controlled.     
-<i class="fa fa-wifi" aria-hidden="true"></i> If your institution is part of [eduroam](https://www.eduroam.org/), be sure to have your credentials for the wifi connexion.      
-Register at [Marine ID](https://www.marine-id.org/) and bring your username and password.
+✅ If you plan to use your own dataset, please verify that it has been quality controlled.     
+✅ If your institution is part of [eduroam](https://www.eduroam.org/), be sure to have your credentials for the wifi connexion.      
+✅ Register at [Marine ID](https://www.marine-id.org/) and bring your username and password.
