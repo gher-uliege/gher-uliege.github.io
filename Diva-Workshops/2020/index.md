@@ -5,8 +5,6 @@
 
 # Diva Workshop -- 27-30 January 2020
 
-This page provides the relevant information about the Diva user workshops organised in the frame of H2020 [SeaDataCloud](https://www.seadatanet.org/) project. [`Diva`](https://github.com/gher-ulg/DIVA) and [`DIVAnd`](https://github.com/gher-ulg/divand.jl) are software tools implementing advanced techniques to generate gridded fields from in situ observations.
-
 ## General information
 
 ### Dates
@@ -16,7 +14,6 @@ This page provides the relevant information about the Diva user workshops organi
 ### Venue
 
 📍 The 2020 edition will be hosted by the University of Bologna, Department of Physics and Astronomy, Viale Berti Pichat 6/2, 40127 Bologna, 2nd floor Classroom "Biomedica".
-
 
 ### Participants
 
