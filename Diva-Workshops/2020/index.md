@@ -9,7 +9,7 @@
 
 ### Dates
 
-<i class="fa fa-calendar-check-o" aria-hidden="true"></i> From Monday 27 January (1.30 PM) to Thursday 30 January (3 PM), 2020.
+<i class="fa fa-calendar-check-o" aria-hidden="true"></i> From Monday 27 January (1.30 PM) to Thursday 30 January (5 PM), 2020.
 
 ### Venue
 
