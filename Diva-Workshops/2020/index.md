@@ -24,8 +24,8 @@ Priority will be given to those partners responsible for the Product preparation
 
 ### Registration
 
-📧 The registration is done by email: contact Evi (paraskevi.tsitsopoulou@cmcc.it) with Cc to Nadia (nadia.pinardi@unibo.it).        
-**Deadline:** 15th of December, 2020.
+📧 The registration period is now closed.    
+Registered participants will soon receive a confirmation email.
 
 ### Accommodations
 
