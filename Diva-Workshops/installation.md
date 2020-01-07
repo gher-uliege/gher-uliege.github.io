@@ -11,6 +11,9 @@ These two packages can be installed using the following commands.
 using Pkg
 Pkg.add("PyPlot")
 Pkg.add("IJulia")
+using PyPlot
+using IJulia
+notebook()
 ```
 Installation can take a couple of minutes and will take about 3 GB of disk space.
 
