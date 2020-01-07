@@ -1,6 +1,6 @@
 # Installation
 
-* You will need to install [Julia](https://julialang.org/downloads/). We will use the latest version, i.e. version **1.2** as of November 2019. Versions earlier than julia 1.0 will not work.
+* You will need to install [Julia](https://julialang.org/downloads/). We will use the latest version, i.e. version **1.3**. Versions earlier than julia 1.0 will not work.
 
 * You will need to install also `DIVAnd` following [these instructions](https://github.com/gher-ulg/DIVAnd.jl/#installing).
 
