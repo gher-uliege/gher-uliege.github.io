@@ -96,11 +96,12 @@ Follow the instructions [here](https://github.com/gher-ulg/Diva-Workshops/tree/m
 
 ### Installation
 
+Please install the following software beforehand:
+
 * [Julia](https://julialang.org/downloads/) language
 * [IJulia](https://github.com/JuliaLang/IJulia.jl), the `Julia` kernel for Jupyter.
 * [OceanDataView](https://odv.awi.de/), to pre-process the data files.
-
-More details about the procedure: [installation](../installation.md).
+* Follow the steps decribed here: [installation](../installation.md).
 
 ### Before the workshop...
 
