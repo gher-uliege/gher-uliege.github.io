@@ -42,39 +42,41 @@ The workshop will be focused on `DIVAnd` (n-dimensional interpolation).
 📍 Meeting point: Department of Physics and Astronomy, Viale Berti Pichat 6/2, Bologna at 1:00 PM.
 🕒 Meeting start: 1.30 PM
 
-Checking of installations
-Theory: introduction to variational analysis
-Objective Analysis, Optimal Interpolation, and Variational Objective Analysis
+* Checking of installations (20 minutes)
+* Beginners:
+    * (Possibly continuation of checking of installation)
+    * Introduction to Objective Analysis, Optimal Interpolation, and Variational Objective Analysis (Alexander Barth)
+    * Basic Julia commands and major differences with MATLAB and Python (Alexander Barth)
+* Advanced users:
+    * Multi Year Products and Ocean Monitoring Indicators: an overview for products consistency analysis and new data products generation (Simona Simoncelli)
+    * New data products:  how to use `DIVAnd`  to produce sliding decades and derived information (Charles Troupin)
+
 
 ### Tuesday
 
-Ocean reanalysis
-Data products consistency analysis
-New data products: how to better use `DIVAnd` (sliding decades)
-Ocean Monitoring Indicators, coastal high resolution maps
-Introduction to jupyter-notebook and basic `Julia` commands and major differences with `MATLAB` and `Python`
-Data reading
-Preparation of topography
-How to define the background field
-Parameter optimization: horizontal and vertical correlation lengths, noise-to-signal ratio
+
+* Introduction to jupyter-notebook (Charles Troupin)
+* Data import and data downloading (Charles Troupin)
+* Preparation of topography (Alexander Barth)
+* Estimate the noise-to-signal ratio (Jean-Marie Beckers)
 
 🍽️ Social dinner
 
 ### Wednesday
 
-Computation of error field
-Add advection constraint (afternoon)
+* Definition of the background field (Charles Troupin)
+* Parameter optimization: horizontal and vertical correlation lengths (Alexander Barth)
+* Computation of the error field (Jean-Marie Beckers)
+* Advection constraint: (Alexander Barth)
 
 ### Thursday
 
-Wrap-up with future development ideas:
-* From data integration to `DIVAnd`: how to harmonize the workflow
-* Use of residuals to discard non-representative data in the climatology
-* Consistency analysis of `DIVAnd` output with reference products
-
-Afternoon (finish at 3PM), parallel session:
-SeaDataCloud Product Meeting
+* In-situ data quality control and preprocessing challenge: an illustration for the CMEMS Mediterranean reanalysis at CMCC (Romain Escudier)
+* From data integration to `DIVAnd`: how to harmonize the workflow (Charles Troupin)
+* Use of residuals to discard non-representative data in the climatology: (Jean-Marie Beckers)
+* Concluding remarks on consistency analysis of `DIVAnd` output with reference products: (Simona Simoncelli)
 🕒 *Meeting closure:* 3 PM.
+* Follow-up meeting for SeaDataCloud partners: WP11 meeting on the new products (SeaDataCloud partners)
 
 ## Preparation
 
