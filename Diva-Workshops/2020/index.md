@@ -10,7 +10,7 @@
 ### Dates
 
 <i class="fa fa-calendar-check-o" aria-hidden="true"></i> From Monday 27 January (1.30 PM) to Thursday 30 January (5 PM), 2020.
-The Product Meeting will take place on Thursday between 3 and 5 PM.
+The *Product Meeting* will take place on Thursday between 3 and 5 PM.
 
 ### Venue
 
@@ -21,41 +21,38 @@ The Product Meeting will take place on Thursday between 3 and 5 PM.
 
 Participants are expected to be partners of [SeaDataCloud](https://www.seadatanet.org/) or EMODnet [Chemistry](http://www.emodnet-chemistry.eu/), [Biology](http://www.emodnet-biology.eu/) or [Physics](https://www.emodnet-physics.eu/) lots. Other scientists or data managers may request an invitation by contacting the organisers.
 
-Priority will be given to those partners responsible for the Product preparation.
-
 ### Registration
 
-📧 The registration period is now closed.
-Registered participants will soon receive a confirmation email.
+📧 The registration period is now closed and the accepted participants have been notified by email.
 
 ### Accommodations
 
-<i class="fa fa-bed" aria-hidden="true"></i> Bologna is a very busy town and we recommend you book at the jotel before the end of 2019.
+<i class="fa fa-bed" aria-hidden="true"></i> Bologna is a very busy town and we recommend you book at the hotel before the end of 2019.
 [🔗 List of hotels](../assets/pdf/HOTELS-IN-BOLOGNA.pdf).
 
 ## Preliminary program
 
-The workshop will be focused on `DIVAnd` (n-dimensional interpolation).
+The workshop will be focused on [`DIVAnd`](https://github.com/gher-ulg/DIVAnd.jl) (n-dimensional interpolation).
 
 ### Monday (1/2 day)
 
 📍 Meeting point: Department of Physics and Astronomy, Viale Berti Pichat 6/2, Bologna at 1:00 PM.
 🕒 Meeting start: 1.30 PM
 
-* Checking of installations (20 minutes)
+The group will be split into 2 groups: *beginners* and *advanced* users.
+
+* Checking of installations
 * Beginners:
     * (Possibly continuation of checking of installation)
     * Introduction to Objective Analysis, Optimal Interpolation, and Variational Objective Analysis (Alexander Barth)
     * Basic Julia commands and major differences with MATLAB and Python (Alexander Barth)
 * Advanced users:
     * Multi Year Products and Ocean Monitoring Indicators: an overview for products consistency analysis and new data products generation (Simona Simoncelli)
-    * New data products:  how to use `DIVAnd`  to produce sliding decades and derived information (Charles Troupin)
+    * New data products: how to use `DIVAnd` to produce sliding decades and derived information (Charles Troupin)
 
 
 ### Tuesday
-
-
-* Introduction to jupyter-notebook (Charles Troupin)
+* Introduction to [Jupyter Notebooks](https://jupyter.org/) (Charles Troupin)
 * Data import and data downloading (Charles Troupin)
 * Preparation of topography (Alexander Barth)
 * Estimate the noise-to-signal ratio (Jean-Marie Beckers)
@@ -72,10 +69,11 @@ The workshop will be focused on `DIVAnd` (n-dimensional interpolation).
 ### Thursday
 
 * In-situ data quality control and preprocessing challenge: an illustration for the CMEMS Mediterranean reanalysis at CMCC (Romain Escudier)
-* From data integration to `DIVAnd`: how to harmonize the workflow (Charles Troupin)
-* Use of residuals to discard non-representative data in the climatology: (Jean-Marie Beckers)
-* Concluding remarks on consistency analysis of `DIVAnd` output with reference products: (Simona Simoncelli)
+* From data integration to `DIVAnd`: how to harmonize the work-flow (Charles Troupin)
+* Use of residuals to discard non-representative data in the climatology (Jean-Marie Beckers)
+* Concluding remarks on consistency analysis of `DIVAnd` output with reference products (Simona Simoncelli)
 🕒 *Meeting closure:* 3 PM.
+
 * Follow-up meeting for SeaDataCloud partners: WP11 meeting on the new products (SeaDataCloud partners)
 
 ## Preparation
@@ -87,13 +85,13 @@ Participants will have with them a laptop with:
 * sufficient free disk space (approx. 50 GB).
 * Data files necessary for the preparation of a climatology.
 
-More resources might be necessary depending on the resolution and size of the studied domain.
+More computing resources might be necessary depending on the resolution and size of the studied domain.
 
 You may also need to check the list of [acronyms and definitions](../acronyms.md).
 
 ### Workshop material
 
-The notebooks are availabe in the folder `notebooks` in the [zip file](https://github.com/gher-ulg/Diva-Workshops/archive/master.zip).
+The notebooks are available in the folder `notebooks` in the [zip file](https://github.com/gher-ulg/Diva-Workshops/archive/master.zip).
 Follow the instructions [here](https://github.com/gher-ulg/Diva-Workshops/tree/master/notebooks#how-to-download-ipynb-files-from-github) to download and open the notebook files.
 
 ### Installation
@@ -102,11 +100,13 @@ Please install the following software beforehand:
 
 * [Julia](https://julialang.org/downloads/) language
 * [IJulia](https://github.com/JuliaLang/IJulia.jl), the `Julia` kernel for Jupyter.
+* [PyPlot](https://github.com/JuliaPy/PyPlot.jl), the interface to use matplotlib.pyplot.
 * [OceanDataView](https://odv.awi.de/), to pre-process the data files.
-* Follow the steps decribed here: [installation](../installation.md).
+* Follow the steps described here: [installation](../installation.md).
 
 ### Before the workshop...
 
-✅ If you plan to use your own dataset, please verify that it has been quality controlled.
+✅ If you plan to use your own dataset, please verify that it has been quality-controlled.
 ✅ If your institution is part of [eduroam](https://www.eduroam.org/), be sure to have your credentials for the wifi connexion.
-✅ Register at [Marine ID](https://www.marine-id.org/) and bring your username and password.
+✅ Register at [Marine ID](https://www.marine-id.org/) and bring your username and password
+(in ordet to access the *Virtual Research Environment*).
