@@ -5,6 +5,7 @@
 
 # Diva Workshop -- 27-30 January 2020
 
+Short URL: https://tinyurl.com/DIVA2020
 ## General information
 
 ### Dates
