@@ -105,9 +105,13 @@ Please install the following software beforehand:
 * [OceanDataView](https://odv.awi.de/), to pre-process the data files.
 * Follow the steps described here: [installation](../installation.md).
 
+Please make sure to install all these software early enought before the workshop. If you have an issue, you can contact us by mail about 1 week before the workshop and we will try to help you via mail.
+
 ### Before the workshop...
 
 ✅ If you plan to use your own dataset, please verify that it has been quality-controlled.
+
 ✅ If your institution is part of [eduroam](https://www.eduroam.org/), be sure to have your credentials for the wifi connexion.
+
 ✅ Register at [Marine ID](https://www.marine-id.org/) and bring your username and password
 (in ordet to access the *Virtual Research Environment*).
