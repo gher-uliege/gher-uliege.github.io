@@ -7,11 +7,13 @@
 
 Short URL: [🔗 https://tinyurl.com/DIVA2020](https://tinyurl.com/DIVA2020)
 
-## Links to the presentations:
+## Links to the presentations
 
-Romain Escudier: [In-situ data quality control and ßpreprocessing challenge](https://dox.ulg.ac.be/index.php/s/tM1XaJDFKvGS4dd)         
+Romain Escudier: [In-situ data quality control and preprocessing challenge](https://dox.ulg.ac.be/index.php/s/tM1XaJDFKvGS4dd/download)         
 
-Nadia Pinardi: [A non-linear quality control procedure for climatology estimation: ARGO data and Pacific Western Boundary current regions](https://dox.ulg.ac.be/index.php/s/TtHUCaxqPClJMRs)
+Nadia Pinardi: [A non-linear quality control procedure for climatology estimation: ARGO data and Pacific Western Boundary current regions](https://dox.ulg.ac.be/index.php/s/TtHUCaxqPClJMRs/download)
+
+Simona Simoncelli: Consistency analysis of DIVAnd output with reference products
 
 ## General information
 
