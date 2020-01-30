@@ -5,12 +5,19 @@
 
 # Diva Workshop -- 27-30 January 2020
 
-Short URL: https://tinyurl.com/DIVA2020
+Short URL: [🔗 https://tinyurl.com/DIVA2020](https://tinyurl.com/DIVA2020)
+
+## Links to the presentations:
+
+Romain Escudier: [In-situ data quality control and ßpreprocessing challenge](https://dox.ulg.ac.be/index.php/s/tM1XaJDFKvGS4dd)         
+
+Nadia Pinardi: [A non-linear quality control procedure for climatology estimation: ARGO data and Pacific Western Boundary current regions](https://dox.ulg.ac.be/index.php/s/TtHUCaxqPClJMRs)
+
 ## General information
 
 ### Dates
 
-<i class="fa fa-calendar-check-o" aria-hidden="true"></i> From Monday 27 January (1.30 PM) to Thursday 30 January (5 PM), 2020.
+<i class="fa fa-calendar-check-o" aria-hidden="true"></i> From Monday 27 January (1.30 PM) to Thursday 30 January (5 PM), 2020.      
 The *Product Meeting* will take place on Thursday between 3 and 5 PM.
 
 ### Venue
@@ -28,7 +35,7 @@ Participants are expected to be partners of [SeaDataCloud](https://www.seadatane
 
 ### Accommodations
 
-<i class="fa fa-bed" aria-hidden="true"></i> Bologna is a very busy town and we recommend you book at the hotel before the end of 2019.
+<i class="fa fa-bed" aria-hidden="true"></i> Bologna is a very busy town and we recommend you book at the hotel before the end of 2019.       
 [🔗 List of hotels](../assets/pdf/HOTELS-IN-BOLOGNA.pdf).
 
 ## Preliminary program
@@ -37,7 +44,7 @@ The workshop will be focused on [`DIVAnd`](https://github.com/gher-ulg/DIVAnd.jl
 
 ### Monday (1/2 day)
 
-📍 Meeting point: Department of Physics and Astronomy, Viale Berti Pichat 6/2, Bologna at 1:00 PM.
+📍 Meeting point: Department of Physics and Astronomy, Viale Berti Pichat 6/2, Bologna at 1:00 PM.      
 🕒 Meeting start: 1.30 PM
 
 The group will be split into 2 groups: *beginners* and *advanced* users.
@@ -72,7 +79,7 @@ The group will be split into 2 groups: *beginners* and *advanced* users.
 * In-situ data quality control and preprocessing challenge: an illustration for the CMEMS Mediterranean reanalysis at CMCC (Romain Escudier)
 * From data integration to `DIVAnd`: how to harmonize the work-flow (Charles Troupin)
 * Use of residuals to discard non-representative data in the climatology (Jean-Marie Beckers)
-* Concluding remarks on consistency analysis of `DIVAnd` output with reference products (Simona Simoncelli)
+* Concluding remarks on consistency analysis of `DIVAnd` output with reference products (Simona Simoncelli)          
 🕒 *Meeting closure:* 3 PM.
 
 * Follow-up meeting for SeaDataCloud partners: WP11 meeting on the new products (SeaDataCloud partners)
@@ -105,7 +112,7 @@ Please install the following software beforehand:
 * [OceanDataView](https://odv.awi.de/), to pre-process the data files.
 * Follow the steps described here: [installation](../installation.md).
 
-Please make sure to install all these software early enought before the workshop. If you have an issue, you can contact us by mail about 1 week before the workshop and we will try to help you via mail.
+Please make sure to install all these software early enough before the workshop. If you have an issue, you can contact us by mail about 1 week before the workshop and we will try to help you via mail.
 
 ### Before the workshop...
 
@@ -114,4 +121,4 @@ Please make sure to install all these software early enought before the workshop
 ✅ If your institution is part of [eduroam](https://www.eduroam.org/), be sure to have your credentials for the wifi connexion.
 
 ✅ Register at [Marine ID](https://www.marine-id.org/) and bring your username and password
-(in ordet to access the *Virtual Research Environment*).
+(in order to access the *Virtual Research Environment*).
