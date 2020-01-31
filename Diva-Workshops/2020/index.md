@@ -9,11 +9,13 @@ Short URL: [🔗 https://tinyurl.com/DIVA2020](https://tinyurl.com/DIVA2020)
 
 ## Links to the presentations
 
-Romain Escudier: [In-situ data quality control and preprocessing challenge](https://dox.ulg.ac.be/index.php/s/tM1XaJDFKvGS4dd/download)         
+Romain Escudier: *In-situ data quality control and preprocessing challenge* [(pdf)]](https://dox.ulg.ac.be/index.php/s/tM1XaJDFKvGS4dd/download)         
 
-Nadia Pinardi: [A non-linear quality control procedure for climatology estimation: ARGO data and Pacific Western Boundary current regions](https://dox.ulg.ac.be/index.php/s/TtHUCaxqPClJMRs/download)
+Nadia Pinardi: *A non-linear quality control procedure for climatology estimation: ARGO data and Pacific Western Boundary current regions* [(ppt)](https://dox.ulg.ac.be/index.php/s/TtHUCaxqPClJMRs/download) [(pdf)](https://dox.ulg.ac.be/index.php/s/8Ttu6YLIXalgZyO/download)
 
-Simona Simoncelli: Consistency analysis of DIVAnd output with reference products
+Simona Simoncelli:
+* *Consistency analysis of DIVAnd output with reference products* [(pdf)](https://dox.ulg.ac.be/index.php/s/c97ahMQrjFkljvB/download)
+* *Multi Year Products and Ocean Monitoring Indicators: overview for products consistency analysis and new data products generation* [(pdf)](https://dox.ulg.ac.be/index.php/s/i8DmErGyb0L0fUL)
 
 ## General information
 
@@ -81,7 +83,7 @@ The group will be split into 2 groups: *beginners* and *advanced* users.
 * In-situ data quality control and preprocessing challenge: an illustration for the CMEMS Mediterranean reanalysis at CMCC (Romain Escudier)
 * From data integration to `DIVAnd`: how to harmonize the work-flow (Charles Troupin)
 * Use of residuals to discard non-representative data in the climatology (Jean-Marie Beckers)
-* Concluding remarks on consistency analysis of `DIVAnd` output with reference products (Simona Simoncelli)          
+* Concluding remarks on consistency analysis of `DIVAnd` output with reference products (Simona Simoncelli)           
 🕒 *Meeting closure:* 3 PM.
 
 * Follow-up meeting for SeaDataCloud partners: WP11 meeting on the new products (SeaDataCloud partners)
