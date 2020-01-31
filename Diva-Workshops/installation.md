@@ -74,4 +74,24 @@ More information is available at: https://github.com/JuliaLang/IJulia.jl#updatin
 
 # Troubleshooting
 
-For any installation issue please have a look at the [troubleshooting section](https://gher-ulg.github.io/DIVAnd.jl/latest/#Troubleshooting-1) in the documentation.
+For any installation issue please have a look at:
+
+* [DIVAnd troubleshooting section](https://gher-ulg.github.io/DIVAnd.jl/latest/#Troubleshooting-1)
+* [NCDatasets known issues](https://alexander-barth.github.io/NCDatasets.jl/latest/issues/)
+
+## Julia
+
+### Windows
+
+* Make sure that PowerShell can connect to the internet. This command should work:
+
+```
+powershell -NoProfile -Command '[System.Net.ServicePointManager]::SecurityProtocol =[System.Net.SecurityProtocolType]::Tls12; $webclient = (New-Object System.Net.Webclient); $webclient.DownloadFile("https://github.com/JuliaInterop/ZMQBuilder/releases/download/v4.2.5+6/ZMQ.x86_64-w64-mingw32.tar.gz","foo.tar.gz")'
+```
+
+* Windows Management Framework 3.0 or later has to be installed. It should be already installed on Windows 10 and later.
+
+
+## IJulia
+
+* If Julia is installed/run as administator, IJulia cannot open a working web-browser.  If the url is copied into another chrome instance (with internet working), then jupyter works.
