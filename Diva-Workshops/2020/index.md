@@ -126,3 +126,7 @@ Please make sure to install all these software early enough before the workshop.
 
 ✅ Register at [Marine ID](https://www.marine-id.org/) and bring your username and password
 (in order to access the *Virtual Research Environment*).
+
+### Useful references
+
+A list of publications about `DIVA`, Optimal Interpolation, Splines... is available [here](https://gher-ulg.github.io/Diva-Workshops/references.html).
