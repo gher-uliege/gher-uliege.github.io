@@ -9,3 +9,5 @@ are implemented during the following weeks or months.
 [ℹ️ Next workshop (2020)](./2020/index.md)       
 [Previous workshops](./Previous-workshops.md): information about the previous workshops (including presentations).
 gi
+
+[Useful references](./references.md): if you want to know more about the variational analysis
