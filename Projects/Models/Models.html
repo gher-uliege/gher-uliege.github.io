@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>
+		Models
+	</title>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.6.0/leaflet.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.heat/0.2.0/leaflet-heat.js"></script>
+	<script src="./js/basemaps.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.6.0/leaflet.css"/>
+	<style type="text/css">
+	#map { height : 900px; width : 1800px}
+</style>
+</head>
+<body>
+
+	<div id="map"></div>
+	<script type="text/javascript" src="data/test.js"></script>
+	<script>
+
+	var map = L.map('map')
+
+	map.setView([45., 0.], 5);
+	map.addLayer(Esri_OceanBasemap);
+
+	var baseMaps = {
+		"CartoDB": CartoDB,
+		"OpenStreetMap": OpenStreetMap_Mapnik,
+		"ESRI Ocean Basemap": Esri_OceanBasemap
+	};
+
+	var bathymetry = L.tileLayer.wms('https://ows.emodnet-bathymetry.eu/wms', {
+		layers: 'emodnet:mean_atlas_land,coastlines,world:sea_names'
+	});
+
+	function onEachFeature(feature, layer) {
+		var popupContent = "<h2>Model:</h2> " + feature.properties.name;
+
+		if (feature.properties && feature.properties.popupContent) {
+			popupContent += feature.properties.popupContent;
+		}
+
+		layer.bindPopup(popupContent);
+	}
+
+	// Use this to filter?
+	// http://bl.ocks.org/zross/f0306ca14e8202a0fe73
+
+	L.geoJSON(models, {color: "#ff0000", onEachFeature: onEachFeature}).addTo(map);
+
+
+	var overlayers = {
+		"EMODnet bathymetry": bathymetry
+	};
+
+	L.control.layers(baseMaps, overlayers,
+		{autoZIndex:true, collapsed:false}).addTo(map);
+
+		</script>
+	</body>
+	</html>
