@@ -48,25 +48,34 @@
 
 	var heatmap = L.heatLayer(coords, heatStyle);
 
+  var get_color_track = function(feature) {
+		lon = feature.geometry.coordinates[0][0];
+		cgroup1 = ["#FFA500", "#FF8C00", "#FF7F50", "#FF6347", "#FF4500"]
+		cgroup2 = ["#00FF7F", "#3CB371", "#2E8B57", "#228B22", "#008000", "#006400", "#9ACD32", "#6B8E23", "#556B2F"]
+		let ig1 = 0
+		let ig2 = 0
+		if (lon < 9.4) {
+			colorTrack = cgroup1[ig1]
+			ig1++
+		} else {
+			colorTrack = cgroup2[ig2]
+			ig2++;
+		}
+		console.log(colorTrack);
+		return colorTrack;
+	}
+
+
 	var linestyle = function(feature) {
 		release_position = feature.geometry.coordinates[0];
 		console.log(release_position);
-		L.circle([release_position[1], release_position[0]],
-			{radius: 750, color:"blue"}).addTo(map);
-		switch (feature.properties.name) {
-			case '0-3149059': return {color: "#ff0000", "weight": 2};
-			case "0-3148596": return {color: "#b15928", "weight": 2};
-			case "0-3149226": return {color: "#ffff99", "weight": 2};
-			case "0-3149229": return {color: "#6a3d9a", "weight": 2};
-			case "0-3148178": return {color: "#cab2d6", "weight": 2};
-			case "0-3148182": return {color: "#ff7f00", "weight": 2};
-			case "0-3148176": return {color: "#fdbf6f", "weight": 2};
-			case "0-3148216": return {color: "#e31a1c", "weight": 2};
-			case "0-3148145": return {color: "#fb9a99", "weight": 2};
-			case "0-3148109": return {color: "#b2df8a", "weight": 2};
-			case "0-3148168": return {color: "#1f78b4", "weight": 2};
-			case "0-3148173": return {color: "#a6cee3", "weight": 2};
-		};
+		var pane1 = map.createPane('markers1');
+
+		L.circleMarker([release_position[1], release_position[0]],
+			{radius: 5, color:"black", fillColor: "black", pane: 'markers1'}).addTo(map);
+
+		colorTrack = get_color_track(feature);
+		return {color: colorTrack, width: 2}
 
 	};
 
@@ -83,11 +92,11 @@
 	};
 
   var circareas = []
-	for (const [name, coords] of Object.entries(areas)) {
-	  var c = L.circle(coords, {radius: 2000, color:"red"}).addTo(map);
-		circareas.push(c);
-	}
-	var circles = L.layerGroup(circareas);
+	//for (const [name, coords] of Object.entries(areas)) {
+	//  var c = L.circle(coords, {radius: 2000, color:"red"}).addTo(map);
+	//	circareas.push(c);
+	//}
+	//var circles = L.layerGroup(circareas);
 
 	// Add mooring positions
 	var mooringpos = {
@@ -111,7 +120,7 @@
 		"Drifter trajectories": driftersall,
 		"EMODnet bathymetry": bathymetry,
 		"Drifter heat map": heatmap,
-		"Release areas": circles,
+//		"Release areas": circles,
 		"Moorings": moorings,
 		"Marine natural parc": PNM
 	};
