@@ -20,6 +20,7 @@ Available in Julia standard library:
 ### General
 
 [PhysOcean.jl](https://github.com/gher-ulg/PhysOcean.jl): utility functions for physical oceanography (properties of seawater, air-sea heat fluxes,...)       
+[ClimateTools.jl](https://github.com/JuliaClimate/ClimateTools.jl): tools in Climate science such as regridding or netCDF reading.
 [Unitful.jl](https://github.com/PainterQubits/Unitful.jl): physical quantities with arbitrary units.              
 
 
