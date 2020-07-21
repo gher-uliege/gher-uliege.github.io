@@ -202,11 +202,17 @@ cp blas_LINUX.a ~/.local/lib/ifort/libblas.a
 
 ### LAPACK
 
+http://www.netlib.org/lapack/     
+(version 3.9.0 as of July 2020)
+
 ```bash
 cd lapack-3.9.0
+make
 ```
 
-Edit the file `make.inc` and modify the compilers and the corresponding flags:
+#### ifort
+
+Before running `make`, ddit the file `make.inc` and modify the compilers and the corresponding flags:
 ```
 CC = icc
 CFLAGS = '-O3 -xHost -ip -no-prec-div -static-intel'
