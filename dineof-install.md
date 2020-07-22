@@ -175,6 +175,8 @@ make
 make install
 ```
 
+## Other libraries (BLAS, LAPACK, ...)
+
 ### BLAS
 
 🔗 http://www.netlib.org/blas/     
@@ -287,26 +289,33 @@ then
 make
 ```
 
-### DINEOF
+## DINEOF
 
+### Environment variables
 
-#### Environment variables
 Ensure that `PATH` and `LD_LIBRARY_PATH` have been updated:
-
 ```bash
-NCDIR=~/.local/			  # for gfortran
+NCDIR=~/.local/	      # for gfortran
 NCDIR=~/.local/ifort  # for ifort
 export PATH=${NCDIR}/bin/:$PATH
 export LD_LIBRARY_PATH=${NCDIR}/lib:${LD_LIBRARY_PATH}
 ```
 
-#### Compiling options and paths
+#### Download
 
-Edit `config.mk` and set the paths according to your installation:
 ```bash
-
+cd ~
+wget https://github.com/aida-alvera/DINEOF/archive/master.zip
+unzip master.zip
+cd DINEOF-master/
 ```
 
+#### Compile
+
+Edit `config.mk` and set the compiler and the library paths according to your installation, then run:
+```bash
+make
+```
 
 #### Issues
 
