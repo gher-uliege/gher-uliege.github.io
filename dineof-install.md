@@ -78,7 +78,6 @@ cd hdf5-1.12.0
 
 ```bash
 H5DIR=~/.local
-
 ./configure --with-zlib=${ZDIR} --prefix=${H5DIR} --enable-hl
 make check
 make install
@@ -101,12 +100,16 @@ export FFLAGS='-O3 -xHost -ip -no-prec-div -static-intel'
 export CPP='icc -E'
 export CXXCPP='icpc -E'
 ```
+
+__Note:__ the `-x` option tells the compiler which processor features it may target.     
+Check [CECI instructions](https://support.ceci-hpc.be/doc/_contents/UsingSoftwareAndLibraries/CompilingSoftwareFromSources/index.html#with-the-intel-compiler) for more details.
+
 then we load the compilers with `module`:
 ```bash
 module load icc
 module load ifort
 ```
-Note that the name or path of the compilers may change according to the machine.     
+__Note:__ the name or path of the compilers may change according to the machine.     
 Adapt the 2 previous lines accordingly.
 
 and finally the compilation is done as with `gfortran`, except that we use a different
@@ -291,7 +294,7 @@ FFLAGS  = -O
 ```
 then compile
 ```bash
-make
+make all
 ```
 
 #### ifort
@@ -365,15 +368,24 @@ the environment variable `LD_LIBRARY_PATH`.
 ```bash
 ../../dineof: error while loading shared libraries: libifport.so.5: cannot open shared object file: No such file or directory
 ```
+
 __Solution:__ make sure that the module containing the ifort compiler was loaded prior to starting the run. For example with `Lemaitre3`:
 ```bash
 module load intel/2019b
 ```
 
+```bash
 ../dineof: error while loading shared libraries: libnetcdff.so.7: cannot open shared object file: No such file or directory
+```
 
+```bash
 ../dineof: error while loading shared libraries: libnetcdf.so.18: cannot open shared object file: No such file or directory
+```
 
+```bash
+checking size of off_t... configure: error: in `/home/ulg/gher/ctroupin/Downloads/netcdf-fortran-4.5.2':
+configure: error: cannot compute sizeof (off_t)
+```
 
 ```bash
 checking wether the C compiler works... no
@@ -394,6 +406,18 @@ ncdump: error while loading shared libraries: libimf.so: cannot open shared obje
 
 __Solution:__
 
+```bash
+libtool: warning: library FILENAME was moved.
+```
+This can happen when you moved a library into another directory. Even if this directory is your
+`LD_LIBRARY_PATH`, the error arises.      
+__Solution:__ edit the file, for example `libhdf5_hl.la` and modify the paths accordingly:
+```bash
+dependency_libs=' -L/home/ulg/gher/ctroupin/.local/lib /home/ulg/gher/ctroupin/.local/ifort/lib/libhdf5.la -lrt -lz -ldl -lm'
+...
+libdir='/home/ulg/gher/ctroupin/.local/ifort/lib'
+```
+
 ## Tests
 
 The size of the domain is 180 X 144 X 244 time steps and contains measurements of
@@ -409,11 +433,12 @@ slightly adapted to the machine using the CECI *Wizard* as guideline.
 |:--------:|:----------------|:---------------|:--------------|
 | Charles Laptop	|	60			 		| 5318.3443			| 2.2952	|
 | Vega 						| 60					|	6907.0500			| 2.7896	|
-| NIC4		  			| 64					|	13394.7937		| 3.5995	|
+| NIC4⁽¹⁾	  			| 64					|	13394.7937		| 3.5995	| E5-2650 @ 2GHz, 64 GB RAM, QDR Infiniband
+| NIC4						| 60					| 3418.7813     | 1.5118	|
 | Hercules2 			| 60					|	3111.9435			| 1.1419	|
-| Lemaitre3				|							|								| 9.4441  |
+| Lemaitre3				|	60					|	46182.3758:		| 9.4441  | Intel Skylake 5118@2.3GHz, 96GB RAM
 | Dragon1					| 60					| 1999.7440			| 0.8739  |
-
+⁽¹⁾ The libraries were not compiled but loaded using `module load ...`.
 
 * The number of modes for the final reconstruction was always 60, except for `NIC4`.
 __Under investigation__.
@@ -423,7 +448,16 @@ except for NIC4.
 
 ### Further test on Dragon1
 
+Quick assessment of the role of the different parameters.
+
 |ntasks	| cpus-per-task	| mem-per-cpu		| Time per EOF	| Total time (s) |
 |:-----:|:--------------|:--------------|:--------------|:---------------|
 | 1			| 2							| 2653 					| 0.8739				| 1999.7440			 |
-| 1			| 2							| 1000 					| 0.8749				| 							 |
+| 1			| 2							| 1000 					| 0.8749				| 1994.6578			 |
+| 1			| 4							| 1000					| 0.8739				| 1992.8910			 |
+
+* No need to use too large _memory per CPU_ if not required by the application.
+* Possible to run DINEOF for `MPI`?
+
+
+1.5118
