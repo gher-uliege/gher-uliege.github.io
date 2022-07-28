@@ -317,7 +317,7 @@ FFLAGS  = -O3 -xHost -ip -no-prec-div -static-intel
 ```
 then
 ```bash
-make
+make all
 ```
 
 ## DINEOF
