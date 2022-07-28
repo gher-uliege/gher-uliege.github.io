@@ -222,6 +222,7 @@ FORTRAN  = ifort
 ...
 LOADER   = ifort
 ```
+(the `LOADER` option does not appear in recent version of the `make.inc`)
 In addition we can change the compiling flags:
 ```bash
 	OPTS     = '-O3 -xHost -ip -no-prec-div -static-intel'
@@ -230,7 +231,7 @@ In addition we can change the compiling flags:
 recompile the library and copy the resulting file:
 ```bash
 make
-cp blas_LINUX.a ~/.local/lib/ifort/libblas.a
+cp blas_LINUX.a ~/.local/ifort/lib/libblas.a
 ```
 
 ### LAPACK
