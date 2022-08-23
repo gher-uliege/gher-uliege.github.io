@@ -241,7 +241,7 @@ cp blas_LINUX.a ~/.local/lib/ifort/libblas.a
 ```bash
 cd ~/download
 wget https://github.com/Reference-LAPACK/lapack/archive/v3.9.0.tar.gz
-tar xvf 3.9.0.tar.gz
+tar xvf v3.9.0.tar.gz
 cd lapack-3.9.0
 ```
 
@@ -352,8 +352,6 @@ The netCDF directories and options are located with `nc-config` command, if it i
 If you want to modify the compiling flag, edit the corresponding file in the `Compilers` directory, for example `Linux-ifort.mk`.
 
 Once this is done, you can compile:
-```
-then run:
 ```bash
 make
 ```
@@ -374,7 +372,6 @@ the environment variable `LD_LIBRARY_PATH`.
 ```bash
 ../../dineof: error while loading shared libraries: libifport.so.5: cannot open shared object file: No such file or directory
 ```
-
 __Solution:__ make sure that the module containing the ifort compiler was loaded prior to starting the run. For example with `Lemaitre3`:
 ```bash
 module load intel/2019b
@@ -441,16 +438,17 @@ slightly adapted to the machine using the CECI *Wizard* as guideline.
 | Laptop	 | 60			| 5318.3443		| 2.2952	|	Intel(R) Core(TM) i7-6600U CPU @ 2.60GHz | 								
 | Vega 		 | 60			|	6907.0500		| 2.7896	| AMD Opteron(TM) Processor 6272|
 | NIC4		 | 60			| 3418.7813   | 1.5118	| E5-2650 @ 2GHz, 64 GB RAM|
+| NIC5           | 60                   | 2271.7226   | 0.8734  | Rome 2.9 GHz | 
 | Hercules | 60			|	3111.9435		| 1.1419	| AMD EPYC 7551P 32-Core Processor|
 | Lemaitre3| 60			|	46182.3758	| 9.4441  | Intel Skylake 5118@2.3GHz, 96GB RAM|
 | Dragon1	 | 60			| 1999.7440		| 0.8739  | Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz|
+| Dragon2	 | 60			|	2097.0578		| 0.8300	| Intel(R) Xeon(R) Gold 6130 CPU @ 2.10GHz|
 
 ⁽¹⁾ The runs were repeated several times and did not show significant differences in the times.
 
 * The number of modes for the final reconstruction was always 60, except for `NIC4` when we used the pre-installed libraries (`module load ...`)
-* The fastest machine was by far `Dragon1` while the slowest was `Lemaitre3`.
-* The expected error, convergence achieved and number of iterations were the same for all the machines,
-except for NIC4.
+* The fastest machine was `Dragon2` while the slowest was `Lemaitre3`.
+* The expected error, convergence achieved and number of iterations were the same for all the machines.
 
 ### Effect of the compiler
 
