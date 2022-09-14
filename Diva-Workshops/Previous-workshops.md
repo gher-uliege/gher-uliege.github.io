@@ -13,4 +13,4 @@
 |4th workshop  | [STARESO](http://www.stareso.ulg.ac.be/en/), Calvi 🇫🇷   | 23-26 October 2009| [Diva workshop 2009 ](./Previous/Diva-workshop-2009-Stareso.md)|
 |3rd workshop  | [STARESO](http://www.stareso.ulg.ac.be/en/), Calvi 🇫🇷   | 15-17 October 2008| [Diva workshop 2008 ](./Previous/Diva-workshop-2008-Stareso.md)|
 |2nd workshop  | [STARESO](http://www.stareso.ulg.ac.be/en/), Calvi 🇫🇷   | 4-6 November 2007 | [Diva workshop 2007 ](./Previous/Diva-workshop-2007-Stareso.md)|
-|1st workshop  | Sart Tilman, Liège      | 13-15 November 2006| [Diva workshop 2006 ](./Previous/Diva-workshop_2006_Liege.md)|
+|1st workshop  | Sart Tilman, Liège      | 13-15 November 2006| [Diva workshop 2006 ](./Previous/Diva-workshop-2006-Liege.md)|
