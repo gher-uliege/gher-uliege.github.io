@@ -12,7 +12,7 @@ using PyPlot
 using IJulia
 notebook()
 ```
-This installs [DIVAnd](https://github.com/gher-ulg/DIVAnd.jl/), [`IJulia`](https://github.com/JuliaLang/IJulia.jl), the graphical notebook interface to Julia (highly recommended for the workshop) and [`PyPlot`](https://github.com/JuliaPy/PyPlot.jl) for the plotting among others.
+This installs [`DIVAnd`](https://github.com/gher-ulg/DIVAnd.jl/), [`IJulia`](https://github.com/JuliaLang/IJulia.jl), the graphical notebook interface to Julia (highly recommended for the workshop) and [`PyPlot`](https://github.com/JuliaPy/PyPlot.jl) for the plotting among others.
 Installation can take a couple of minutes and will take about 3 GB of disk space.
 
 ### Copying and pasting commands in a terminal
@@ -83,20 +83,6 @@ For any installation issue please have a look at:
 * [NCDatasets known issues](https://alexander-barth.github.io/NCDatasets.jl/latest/issues/)
 
 If the installation does not work, please report the issue here with the full error message: [https://github.com/gher-ulg/Diva-Workshops/issues/new](https://github.com/gher-ulg/Diva-Workshops/issues/new)
-
-
-## Julia
-
-### Windows
-
-* Make sure that PowerShell can connect to the internet. This command should work:
-
-```
-powershell -NoProfile -Command '[System.Net.ServicePointManager]::SecurityProtocol =[System.Net.SecurityProtocolType]::Tls12; $webclient = (New-Object System.Net.Webclient); $webclient.DownloadFile("https://github.com/JuliaInterop/ZMQBuilder/releases/download/v4.2.5+6/ZMQ.x86_64-w64-mingw32.tar.gz","foo.tar.gz")'
-```
-
-* Windows Management Framework 3.0 or later has to be installed. It should be already installed on Windows 10 and later.
-
 
 ## IJulia
 
