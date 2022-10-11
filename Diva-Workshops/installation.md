@@ -49,7 +49,7 @@ using IJulia
 notebook()
 ```
 A new browser window should open. Then, click on New => Julia 1.x (where 1.x is you julia version). In the text box, type `1+2` and then hit `Control-Enter`. The answer should be 3! Normally your notebook should open in your home directory so you see the files/directories you have there. 
-If this does not work, please report the issue here with the full error message: https://github.com/gher-ulg/Diva-Workshops/issues/new
+If this does not work, please report the issue here with the full error message: [https://github.com/gher-ulg/Diva-Workshops/issues/new](https://github.com/gher-ulg/Diva-Workshops/issues/new)
 
 
 
@@ -60,7 +60,7 @@ using IJulia
 notebook(dir="D:/myotherdirectory/onanotherdisk/")
 ```
 
-For issues with IJulia/Jupyter please have a look at https://github.com/JuliaLang/IJulia.jl.
+For issues with IJulia/Jupyter please have a look at [https://github.com/JuliaLang/IJulia.jl](https://github.com/JuliaLang/IJulia.jl).
 
 ### First steps with Jupyter and Julia
 
@@ -73,7 +73,7 @@ used (remember, Julia does some compilations).
 2. Run in Julia (NOT IJulia of Jupyter): `Pkg.build("IJulia")`
 3. Then (in IJulia or Julia) `Pkg.update()`
 
-More information is available at: https://github.com/JuliaLang/IJulia.jl#updating-julia-and-ijulia
+More information is available at: [https://github.com/JuliaLang/IJulia.jl#updating-julia-and-ijulia](https://github.com/JuliaLang/IJulia.jl#updating-julia-and-ijulia)
 
 # Troubleshooting
 
@@ -82,7 +82,7 @@ For any installation issue please have a look at:
 * [DIVAnd troubleshooting section](https://gher-ulg.github.io/DIVAnd.jl/latest/#Troubleshooting-1)
 * [NCDatasets known issues](https://alexander-barth.github.io/NCDatasets.jl/latest/issues/)
 
-If the installation does not work, please report the issue here with the full error message: https://github.com/gher-ulg/Diva-Workshops/issues/new
+If the installation does not work, please report the issue here with the full error message: [https://github.com/gher-ulg/Diva-Workshops/issues/new](https://github.com/gher-ulg/Diva-Workshops/issues/new)
 
 
 ## Julia
