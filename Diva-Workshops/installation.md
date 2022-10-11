@@ -1,6 +1,6 @@
 # Installation
 
-* You will need to install [Julia](https://julialang.org/downloads/). We will use the latest version, i.e. version **1.8**. Versions earlier than julia 1.0 will not work. If you have any issue, please have a look to the [installation instructions](https://julialang.org/downloads/platform/) for more details. (Note it is not necessary to add julia to the Windows PATH environement variable).
+* You will need to install [Julia](https://julialang.org/downloads/). We will use the latest version, i.e. version **1.8**. Versions earlier than julia 1.0 will not work. If you have any issue, please have a look to the [installation instructions](https://julialang.org/downloads/platform/) for more details. (Note it is _not necessary_ to add julia to the Windows PATH environement variable).
 
 * Install the following julia packages by executing the following lines in a julia terminal:
 
