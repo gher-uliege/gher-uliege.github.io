@@ -2,9 +2,7 @@
 
 * You will need to install [Julia](https://julialang.org/downloads/). We will use the latest version, i.e. version **1.8**. Versions earlier than julia 1.0 will not work. If you have any issue, please have a look to the [installation instructions](https://julialang.org/downloads/platform/) for more details. (Note it is not necessary to add julia to the Windows PATH environement variable).
 
-* You will need to install also `DIVAnd` following [these instructions](https://github.com/gher-ulg/DIVAnd.jl/#installing).
-
-* Install also [`IJulia`](https://github.com/JuliaLang/IJulia.jl), the graphical notebook interface to Julia (highly recommended for the workshop) and [`PyPlot`](https://github.com/JuliaPy/PyPlot.jl) for the plotting.
+* Install the following julia packages by executing the following lines in a julia terminal:
 
 These two packages can be installed using the following commands.
 ```julia
@@ -14,6 +12,7 @@ using PyPlot
 using IJulia
 notebook()
 ```
+This installs [DIVAnd](https://github.com/gher-ulg/DIVAnd.jl/), [`IJulia`](https://github.com/JuliaLang/IJulia.jl), the graphical notebook interface to Julia (highly recommended for the workshop) and [`PyPlot`](https://github.com/JuliaPy/PyPlot.jl) for the plotting among others.
 Installation can take a couple of minutes and will take about 3 GB of disk space.
 
 ### Copying and pasting commands in a terminal
