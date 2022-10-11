@@ -48,7 +48,12 @@ A new window should open with a straight line.
 using IJulia
 notebook()
 ```
-A new browser window should open. Then, click on New => Julia 1.x (where 1.x is you julia version). In the text box, type `1+2` and then hit `Control-Enter`. The answer should be 3! Normally your notebook should open in your home directory so you see the files/directories you have there. If you want to see another directory tree, you can try to open the browser interface with 
+A new browser window should open. Then, click on New => Julia 1.x (where 1.x is you julia version). In the text box, type `1+2` and then hit `Control-Enter`. The answer should be 3! Normally your notebook should open in your home directory so you see the files/directories you have there. 
+If this does not work, please report the issue here with the full error message: https://github.com/gher-ulg/Diva-Workshops/issues/new
+
+
+
+If you want to see another directory tree, you can try to open the browser interface with 
 
 ```julia
 using IJulia
@@ -76,6 +81,9 @@ For any installation issue please have a look at:
 
 * [DIVAnd troubleshooting section](https://gher-ulg.github.io/DIVAnd.jl/latest/#Troubleshooting-1)
 * [NCDatasets known issues](https://alexander-barth.github.io/NCDatasets.jl/latest/issues/)
+
+If the installation does not work, please report the issue here with the full error message: https://github.com/gher-ulg/Diva-Workshops/issues/new
+
 
 ## Julia
 
