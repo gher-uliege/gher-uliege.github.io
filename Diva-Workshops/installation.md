@@ -1,6 +1,6 @@
 # Installation
 
-* You will need to install [Julia](https://julialang.org/downloads/). We will use the latest version, i.e. version **1.3**. Versions earlier than julia 1.0 will not work. If you have any issue, please have a look to the [installation instructions](https://julialang.org/downloads/platform/) for more details. (Note it is not necessary to add julia to the Windows PATH environement variable).
+* You will need to install [Julia](https://julialang.org/downloads/). We will use the latest version, i.e. version **1.8**. Versions earlier than julia 1.0 will not work. If you have any issue, please have a look to the [installation instructions](https://julialang.org/downloads/platform/) for more details. (Note it is not necessary to add julia to the Windows PATH environement variable).
 
 * You will need to install also `DIVAnd` following [these instructions](https://github.com/gher-ulg/DIVAnd.jl/#installing).
 
@@ -9,8 +9,7 @@
 These two packages can be installed using the following commands.
 ```julia
 using Pkg
-Pkg.add("PyPlot")
-Pkg.add("IJulia")
+Pkg.add(["NCDatasets","PyPlot","Interpolations","DIVAnd","IJulia"])
 using PyPlot
 using IJulia
 notebook()
@@ -33,7 +32,7 @@ Windows user should have a look at this to [enable the quick edit mode](https://
 using Pkg
 Pkg.test("DIVAnd");
 ```
-All tests should succeed but it might need some time to execute completely. Be patient.
+All tests should succeed but it might need some time to execute completely (you will need an active internet connection). Be patient.
 
 * Testing `PyPlot`. Again in the Julia terminal, issue the following commands:
 
@@ -50,7 +49,7 @@ A new window should open with a straight line.
 using IJulia
 notebook()
 ```
-A new browser window should open. Then, click on New => Julia 1.3. In the text box, type `1+2` and then hit `Control-Enter`. The answer should be 3! Normally your notebook should open in your home directory so you see the files/directories you have there. If you want to see another directory tree, you can try to open the browser interface with 
+A new browser window should open. Then, click on New => Julia 1.x (where 1.x is you julia version). In the text box, type `1+2` and then hit `Control-Enter`. The answer should be 3! Normally your notebook should open in your home directory so you see the files/directories you have there. If you want to see another directory tree, you can try to open the browser interface with 
 
 ```julia
 using IJulia
