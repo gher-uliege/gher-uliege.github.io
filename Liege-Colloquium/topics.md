@@ -1,3 +1,6 @@
+| 2023 | Machine Learning and Data Analysis in Oceanography |
+| 2022 | Low Oxygen Environments in Marine and Coastal Waters - Drivers, Consequences, Solutions | 
+| 2021 | The coastal ocean under pressures | 
 | 2020 | Towards understanding and assessing human impacts on coastal marine environments |
 | 2019 | Polar Ocean facing changes |
 | 2018 | Long-term studies in oceanography – a celebration of 50 years of science at the Liege Colloquium  |
