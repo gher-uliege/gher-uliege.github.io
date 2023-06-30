@@ -462,7 +462,7 @@ On NIC4 we tested the same application but with different compilers and
 different ways to load the libraries.
 
 | Modules  | Number of modes | Total time	(s) |	Time per EOF (s) |
-|:--------:|:----------------|:---------------|:--------------||
+|:--------:|:----------------|:---------------|:--------------|
 | Module load ...	  			| 64					|	13394.7937		| 3.5995	|
 | Compiled with `ifort`		| 60					| 3418.7813     | 1.5118	|
 | Compiled with `gfortran`| 61					|	6883.6695			|	2.1437	|
