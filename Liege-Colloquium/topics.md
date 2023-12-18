@@ -1,3 +1,4 @@
+| 2024 | Ocean Extremes | 
 | 2023 | Machine Learning and Data Analysis in Oceanography |
 | 2022 | Low Oxygen Environments in Marine and Coastal Waters - Drivers, Consequences, Solutions | 
 | 2021 | The coastal ocean under pressures | 
