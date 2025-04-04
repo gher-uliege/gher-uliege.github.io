@@ -146,9 +146,9 @@ First step: compiling the netCDF library for C.
 
 ```bash
 cd ~/download
-wget https://github.com/Unidata/netcdf-c/archive/v4.7.4.tar.gz
-tar xvf v4.7.4.tar.gz
-cd netcdf-c-4.7.4/
+wget https://github.com/Unidata/netcdf-c/archive/refs/tags/v4.9.3.tar.gz
+tar xvf v4.9.3.tar.gz
+cd netcdf-c-4.9.3
 ZDIR=~/.local
 ```
 
@@ -177,9 +177,10 @@ make install
 After netCDF for C has been installed, it is the turn for the Fortran library.
 
 ```bash
-wget https://github.com/Unidata/netcdf-fortran/archive/v4.5.2.tar.gz
-tar xvf v4.5.2.tar.gz
-cd netcdf-fortran-4.5.2/
+cd ~/download
+wget https://github.com/Unidata/netcdf-fortran/archive/refs/tags/v4.6.2.tar.gz
+tar xvf v4.6.2.tar.gz
+cd netcdf-fortran-4.6.2/
 export PATH=${NCDIR}/bin:$PATH
 export LD_LIBRARY_PATH=${NCDIR}/lib:${LD_LIBRARY_PATH}
 ```
