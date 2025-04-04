@@ -76,7 +76,7 @@ make install
 
 Download the last version of the library from      
 🔗 [https://www.hdfgroup.org/downloads/hdf5/source-code/](https://www.hdfgroup.org/downloads/hdf5/source-code/)     
-(version 1.12 as of July 2020).
+(version 1.14.6 as of April 2025).
 Copy it (using `scp` or `rsync`) to the machine of your choice.
 
 ```bash
