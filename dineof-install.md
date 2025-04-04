@@ -118,9 +118,15 @@ Check [CECI instructions](https://support.ceci-hpc.be/doc/_contents/UsingSoftwar
 
 then we load the compilers with `module`:
 ```bash
+module load intel-compilers
+```
+
+Previously, the loading was done with 
+```bash
 module load icc
 module load ifort
 ```
+
 __Note:__ the name or path of the compilers may change according to the machine.     
 Adapt the 2 previous lines accordingly.
 
