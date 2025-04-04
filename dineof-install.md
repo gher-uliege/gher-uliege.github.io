@@ -245,13 +245,13 @@ cp blas_LINUX.a ~/.local/ifort/lib/libblas.a
 ### LAPACK
 
 🔗 [http://www.netlib.org/lapack/](http://www.netlib.org/lapack/)   
-(version 3.9.0 as of July 2020)
+(version 3.12.1 as of April 2025)
 
 ```bash
 cd ~/download
-wget https://github.com/Reference-LAPACK/lapack/archive/v3.9.0.tar.gz
-tar xvf v3.9.0.tar.gz
-cd lapack-3.9.0
+wget https://github.com/Reference-LAPACK/lapack/archive/refs/tags/v3.12.1.tar.gz
+tar xvf v3.12.1.tar.gz
+cd lapack-3.12.1
 ```
 
 #### gfortran
@@ -330,7 +330,7 @@ make all
 
 ## DINEOF
 
-🔗 http://modb.oce.ulg.ac.be/mediawiki/index.php/DINEOF
+🔗 https://github.com/aida-alvera/DINEOF
 
 ### Environment variables
 
