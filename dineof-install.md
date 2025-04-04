@@ -56,11 +56,12 @@ There are a few libraries to install in the right order.
 
 ### zlib
 
+https://zlib.net/ 
 ```bash
 cd ~/download/
-wget http://prdownloads.sourceforge.net/libpng/zlib-1.2.11.tar.gz
-tar xvf zlib-1.2.11.tar.gz
-cd zlib-1.2.11
+wget https://zlib.net/current/zlib.tar.gz
+tar xvf zlib.tat.gz
+cd zlib-*
 ```
 
 We will specify where the library is installed by using the option `--prefix` and creating a variable `ZDIR`:
